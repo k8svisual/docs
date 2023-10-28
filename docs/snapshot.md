@@ -83,7 +83,7 @@ The dashed outlined section shown below is only shown if VpK is run from a Docke
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_ssh_parms.png" width="700" height="700">
 
 
-Once the information is provided press the __Connect__ button to begin retrieving the k8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named __cluster__ within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the __Snapshot prefix__ field along with date and time appended.  
+Once the information is provided press the "__Connect__" button to begin retrieving the k8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named __cluster__ within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the "Snapshot prefix" field along with date and time appended.  
 
 <br>
 
@@ -95,7 +95,7 @@ vpk-2022-10-26-14h-16m-46s
 
 ### Connected to k8s
 
-While quering the connected Kubernetes cluster a series of processing messages will be displayed in the bottom portion of the dialog.  Returning to the main screen requires closing the dialog by pressing the "__Close__" button.
+While quering the connected Kubernetes cluster a series of processing messages will be displayed in the bottom portion of the above screen.  Returning to the main screen requires closing this screen by pressing the "__Close__" button.
 
 On return to the home screen the newly connect snapshot is shown in the top portion of the screen.  The complete directory path is shown.  The displayed snapshot path is also a button that can be pressed to view statistics for the snapshot.
 
