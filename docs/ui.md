@@ -1,27 +1,3 @@
-<topicKey generalusage/>
-<topicBack id="topicNext" link="overview"/>
-<topicNext id="topicBack" link="gettingstarted"/>
-
-<a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
-<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
-<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a>
-
-#### User Interface 
-
----
-
-<!-- 
-
-User interface of VpK.  
-
-<div style="margin-left: 150px;">
-    <iframe width="700" height="390" src="https://www.youtube.com/embed/nwm5IFHbR34">
-    </iframe>
-</div> 
---- 
-
--->
-
 
 ##### User Interface
 

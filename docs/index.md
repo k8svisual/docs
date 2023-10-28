@@ -1,5 +1,3 @@
-
-
 VpK (Visually presented Kubernetes) was created to aid in understanding what is defined in a specific Kubernetes cluster.   
 
 VpK is comprised of a server and browser application components.  The server component is a node.js application that communicates with running instances of Kubernetes using the __kubectl__ CLI.  The use of other CLI tools other than kubectl is supported.  
@@ -13,7 +11,15 @@ The output from the kubectl CLI is processed to create multiple files that are c
     VpK is designed as read-only and will __not__ modify a Kubernetes cluster and is __not__ a real-time monitoring tool.  
 
 
-## Application features
+### Overview diagram
+
+<p align="center">
+  <img style="float: center;" src="/images/overview-local.png?raw=true" width="1024" height="542">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
+### Application features
 
 - VpK will access a Kubernetes cluster via an established kubectl CLI and save query results, called a __snapshot__, in a local directory. 
 
@@ -35,15 +41,6 @@ The output from the kubectl CLI is processed to create multiple files that are c
 
 - View Owner References chains for k8s resources defined in the cluster.
   
-<br>
 
-#### Overview diagram
-
-<br>
-<p align="center">
-  <img style="float: center;" src="/images/overview-local.png?raw=true" width="1024" height="542">
-</p>
-
-<br>
-<hr style="border:1px solid blue">
+<hr style="border:1px solid #aaaaaa">
 

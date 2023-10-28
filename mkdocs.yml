@@ -2,17 +2,25 @@
 site_name: VpK
 
 nav:
-  - Introduction: index.md
-  - Overview: overview.md
-  - Working with the plan: adjust.md
-  - User Interface: ui.md
+  - INTRODUCTION: index.md
+  - INSTALLING: installing.md
+  - SNAPSHOTS: snapshot.md
+  - TABS:
+      - Overview: overview.md
+      - Cluster: cluster.md
+      - Workload Schematics: schematics.md
+      - Graphic View: graphicview.md
+      - Storage: storage.md
+      - Security: security.md
+      - Search: search.md
+      - OwnerRef Links: ownerref.md
+  - USER INTERFACE: ui.md
   - FAQ: faq.md
-  - Download software: download.md
 
 theme:
   name: material
   palette:
-    primary: #ffff00
+    primary: grey
     scheme: default
   favicon: images/allLogo.png
   logo: images/vpk.png
@@ -36,7 +44,7 @@ theme:
     - toc.follow
 
 extra:
-  homepage: https://k8svisual.github.io
+  homepage: https://k8svisual.github.io/vpk
   generator: false
 
 # Adding a custom CSS stype sheet

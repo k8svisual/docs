@@ -1,6 +1,4 @@
 
-## Cluster
-
 This is a high-level 3D view of the cluster.  The view is interactive and can be rotated, tilted, zoomed in or out, and filtered.  
 
 The left-hand side of the screen has a slide out that enables filtering the 3D view, control sound, and save the current filter settings as the default.
@@ -11,4 +9,20 @@ If a Pod is selected the Properties slide out will have a __View pod schematic__
 
 The __Legend__ button provides information related to the displayed icons and planes.  
 
+
+### Cluster tab
+
+<p align="center">
+  <img style="float: center;" src="/images/tab_cluster.png?raw=true" width="1280" height="720">
+</p>
+
 ---
+
+### Cluster Legend
+
+<p align="center">
+  <img style="float: center;" src="/images/tab_cluster_legend.png?raw=true">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
