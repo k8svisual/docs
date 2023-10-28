@@ -554,32 +554,28 @@
 
   <h1>SNAPSHOTS</h1>
 
-<p><topicKey snapshot/>
-<topicBack id="topicNext" link="cluster"/>
-<topicNext id="topicBack" link="overview"/></p>
-<p><a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
-<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
-<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a></p>
-<h4 id="snapshot">Snapshot</h4>
-<hr />
-<p>Snapshots used by VpK</p>
-<!-- <div style="margin-left: 150px;">
-    <iframe width="700" height="390" src="https://www.youtube.com/embed/7sjFh8N6FrY"></iframe>
-</div> -->
-
-<hr />
 <p>Viewing any information within VpK requires the user to connect to a snapshot of Kubernetes information.  </p>
 <p>Three methods exist to create a VpK Snapshot.  These are:</p>
 <ul>
 <li>From a local install connect to a running k8s cluster</li>
 <li>From a Docker container install ssh to host machine and connect to a running k8s cluster</li>
-<li>Use standalone program 'Snapshot' to connect to a running k8s cluster</li>
+<li>Use stand alone program 'Snapshot' to connect to a running k8s cluster</li>
 </ul>
 <p><strong>NOTE:</strong> All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) as VpK will issue the kubectl command (or other command) with the needed parameters to connect to the k8s cluster. </p>
+<hr />
+<h3 id="local-running-vpk-diagram">Local running VpK diagram</h3>
+<p>The VpK server communicates with the kubectl command CLI to query the k8s cluster.</p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png" width="180" height="112"></p>
+<hr />
+<h3 id="local-running-vpk-diagram_1">Local running VpK diagram</h3>
+<p>The VpK server communicates with the kubectl command CLI to query the k8s cluster.</p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_container.png" width="180" height="112"></p>
+<hr />
+<h3 id="create-a-snapshot">Create a snapshot</h3>
 <p>A snapshot is required to view any of the k8s resources so the creation of the snapshot, or connecting to an existing snapshot, should be the first task any time the application is started.  </p>
 <p>At the top of the screen from drop-down with the <strong>"Select option"</strong> value shown select the desired option to create or obtain a snapshot.  </p>
 <p><br></p>
-<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/dataSourceDropDown.png" width="180" height="112"></p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_DropDown.png" width="180" height="112"></p>
 <p><br><br></p>
 <p>First time usage of VpK will have no existing snapshots.  The <strong>Running cluster</strong> option must be selected to create a snapshot. 
 Once selected the user provides information to connect to the Kubernetes cluster.  Input fields are:</p>
@@ -642,7 +638,7 @@ be shown.  These fields are used to enable the container the ability to run comm
 <p><br></p>
 <p>The dashed outlined section shown below is only shown if VpK is run from a Docker container.</p>
 <p><br></p>
-<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/ssh-parms.png" width="700" height="700"></p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_ssh_parms.png" width="700" height="700"></p>
 <p><br><br></p>
 <p>Once the information is provided press the <strong>Connect</strong> button to begin retrieving the k8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named <strong>cluster</strong> within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the <strong>Snapshot prefix</strong> field along with date and time appended.  </p>
 <p><br></p>
@@ -652,13 +648,13 @@ be shown.  These fields are used to enable the container the ability to run comm
 <p>When accessing a running Kubernetes cluster a series of processing messages will be displayed in the bottom portion of the dialog.  Returning to the main screen requires closing the dialog by pressing the <strong>Close</strong> button.</p>
 <p>On return to the home screen the newly connect snapshot is shown in the top portion of the screen.  The complete directory path is shown.  The displayed snapshot path is also a button that can be pressed to view statistics for the snapshot.</p>
 <p><br></p>
-<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/snapshotName.png" width="500" height="54"></p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_Name.png" width="500" height="54"></p>
 <p><br><br></p>
 <p>Statistics are provided with a count for each resource kind within the cluster or count of resource kinds within a namespace.</p>
 <p><br></p>
-<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/snapshotStatsKind.png" width="700" height="182"></p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsKind.png" width="700" height="182"></p>
 <p><br></p>
-<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/snapshotStatsNS.png" width="700" height="268"></p>
+<p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsNS.png" width="700" height="268"></p>
 <p><br><br></p>
 <p>Information for using the standalone program to create the VpK snapshot is available in the 'snapshot' repository:</p>
 <div class="highlight"><pre><span></span><code>http://github.com/k8svisual/snapshot.git/ 

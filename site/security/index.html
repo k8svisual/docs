@@ -556,32 +556,30 @@
 
   <h1>Security</h1>
 
-<p><topicKey security/>
-<topicBack id="topicNext" link="search"/>
-<topicNext id="topicBack" link="storage"/></p>
-<p><a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
-<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
-<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a></p>
-<h4 id="security">Security</h4>
-<hr />
-<!-- Color coded views of roles, bindings, and subjects defined for RBAC. -->
+<p>Security provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.  </p>
+<p>From the namespace drop-down select a single namespace.  Once a namespace has been selected press the "<strong>View selected namespace</strong>" button. If there is no selected namespace a warning message is displayed.  </p>
+<p>The use of a dashed bounding line is used to group the objects in the selected namespace. Objects outside the dashed bounding line are considered cluster level resources.</p>
+<p>Click on any of the displayed objects and the associated resource definition will be displayed.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security.png">
+</p>
 
-<!-- <div style="margin-left: 150px;">
-    <iframe width="700" height="390" src="https://www.youtube.com/embed/zqzGLhoS1VY">
-    </iframe>
-</div> -->
-
-<p>Security provides a view of the role, subject, and binding for resources in the cluster level or selected namespace.  </p>
-<p>From the namespace drop-down select a single namespace.  Once a namespace has been selected press the <strong>View selected namespace</strong> button. </p>
-<p>If there is no selected namespace a warning message is displayed. </p>
+<h3 id="security-filter">Security filter</h3>
 <p>If several binding results will be shown a dialog is shown that allows the filtering of the results to be shown.  Select one or more for the drop-down
-and press the <strong>Filer bindings</strong> button to view.  Press the <strong>Close</strong> button to cancel viewing any results.</p>
+and press the "<strong>Filter bindings</strong>" button to view.  Press the <strong>Close</strong> button to cancel viewing any results.</p>
 <p>The results are a graph of the security bindings.  Subjects are shown as a rectangle at the top, bindings are shown as an ellipse in the middle, and 
 roles shown as a six-sided object at the bottom of the graph.  Below the Role is a list of the defined rules associated with the Role.</p>
-<p>The use of a dashed bounding line is used to group the objects by namespace. </p>
-<p>Click on any of the displayed color rectangles and the associated resource definition will be displayed.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_filter.png">
+</p>
+
+<h3 id="security-legend">Security legend</h3>
 <p>The <strong>Legend</strong> button can be pressed to view example shapes and colors for the display.</p>
-<hr />
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_filter.png">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
 
 
 

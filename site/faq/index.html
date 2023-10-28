@@ -552,115 +552,30 @@
 
   <h1>FAQ</h1>
 
-<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<p>The following questions and answers hopefully provide aid in understanding and working with Retirement Planner software.  </p>
-<hr style="border:1px solid green">
+<p>The following questions and answers hopefully provide aid in understanding and working with VpK software.  </p>
+<hr style="border:1px solid grey">
 
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>How can I determine if spending $24,000 a year for travel for the first ten years of retirement is possible?</p>
+<p>Is the kubectl CLI required or can another command CLI be used to connect to the Kubernetes cluste?</p>
 </div>
 <details class="answer">
 <summary>Answer</summary>
-<p>From the Retire tab add Single year monthly adjustments of $2,000 to increase the budget for the years to cover timeframe for the desired travel.  Re-calculate the plan and review the impact to the Investment Balance.  </p>
+<p>The default CLI is kubectl is not required.  For example when using Red Hat(r) OpenShift(r) the "<strong>oc</strong>" command CLI is used.
+If the default command CLI is not used the optional command CLI must be connected to the target k8s cluster before VpK can 
+query and retrieve resource data.  The optional command CLI must also be provide in the UI when quering to the cluster.</p>
 </details>
-<hr style="border:1px solid green">
+<hr style="border:1px solid grey">
 
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>What rate of return for my investments is necessary to ensure there is enough money to last till age 90?</p>
+<p>Can I modify the displayed resource information?</p>
 </div>
 <details class="answer">
 <summary>Answer</summary>
-<p>From the Retire or Home tabs click the colored chevrons for the Average Rate of Return.  Once modified re-calculate the plan and review the impact to the Investment Balance and timeframe.  </p>
+<p>VpK is read-only and does not modify the k8s cluster.   </p>
 </details>
-<hr style="border:1px solid green">
-
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>I expect to receive an inheritance within the next few years.  What's the best way to add this to the plan?  </p>
-</div>
-<details class="answer">
-<summary>Answer</summary>
-<p>From the Assets tab add a new item to the Investments section for the inheritance.  This will most likely be defined as After tax income and can be defined as owned by an individual or as joint.  </p>
-</details>
-<hr style="border:1px solid green">
-
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>It's a new year, what changes do I need to make and keep the plan up to date?  </p>
-</div>
-<details class="answer">
-<summary>Answer</summary>
-<ul>
-<li>
-<p>When this software is opened on the computer in the new year the Retirement planning year on the Individuals tab will automatically update to the current year.</p>
-</li>
-<li>
-<p>Review and update the information for the budget, income, and assets.  The updated balances will be used as the starting balances to begin planning.   </p>
-</li>
-<li>
-<p>If either Social Security COLA percentage or Consumer Price Index percentage values are available open the appropriate report from the Useful Info tab, click the lock to allow updating of the tab, and enter the new percentages.</p>
-</li>
-<li>
-<p>If either Federal, State, County, or City income tax rates have changed from the Individuals tab click on the pencil to open Detail Tax Data.  Once opened to the TaxRates tab update the appropriate tables as needed.</p>
-</li>
-<li>
-<p>Adjust the Average Rate or Return and Annual Inflation Rates if needed.</p>
-</li>
-</ul>
-<p>NOTE: It is recommended to generate an updated plan between each of the above tasks to validate the change was made successfully.  Use the green calculator icon on the Home or Retire tabs to generate the updated plan.</p>
-</details>
-<hr style="border:1px solid green">
-
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>When the plan is generating the message that all calculations have stopped is shown, what should I do?  </p>
-</div>
-<details class="answer">
-<summary>Answer</summary>
-<ul>
-<li>Review the Retire tab and locate the last year where there is a dollar amount in the column titled <strong>Annual withdrawal from Investment</strong>.  First, don't ignore the message and hope for the best.  If this year is far enough in the future and you don't expect to live past this year all is fine.  If this year is not far enough in the future, you will need to explore how to either increase income or reduce expenses. </li>
-</ul>
-<p>Income: </p>
-<ul>
-<li>
-<p>If you have a home and can possibly sell it explore what might be a good year for the sale to generate additional income.  The sale of the home is entered in the Housing tab which can be accessed from the Assets tab.</p>
-</li>
-<li>
-<p>Discuss with a financial planner or research if you can get a better rate of return on investments. </p>
-</li>
-</ul>
-<p>Expenses:</p>
-<ul>
-<li>Review any expenses that are classified as Optional and determine if they can be reduced or deleted.</li>
-</ul>
-</details>
-<hr style="border:1px solid green">
-
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>I'm not close to retirement age why would I use this software?  </p>
-</div>
-<details class="answer">
-<summary>Answer</summary>
-<p>Though the software title is Retirement Planner this software can be useful for financial planning well before you start planning for retirement. A few examples of use might be: </p>
-<ul>
-<li>
-<p>Help understand how much money is needed each month by using the Budget tab.</p>
-</li>
-<li>
-<p>Determine how the current inflation rate will impact your budget next two years.</p>
-</li>
-<li>
-<p>Can you afford to buy a car and rent a new apartment?</p>
-</li>
-<li>
-<p>If I save $2,500 a year and get 5% return, what will I have in ten years?</p>
-</li>
-</ul>
-</details>
-<hr style="border:1px solid green">
+<hr style="border:1px solid grey">
 
 
 
