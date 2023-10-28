@@ -7,7 +7,7 @@ screen views are scrolled horizontally across the screen.
 ### Overview tab
 
 <p align="center">
-  <img style="float: center;" src="/images/tab_overview.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/overview.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

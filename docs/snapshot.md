@@ -1,22 +1,4 @@
-<topicKey snapshot/>
-<topicBack id="topicNext" link="cluster"/>
-<topicNext id="topicBack" link="overview"/>
 
-<a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
-<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
-<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a>
-
-#### Snapshot
-
----
-
-Snapshots used by VpK
-
-<!-- <div style="margin-left: 150px;">
-    <iframe width="700" height="390" src="https://www.youtube.com/embed/7sjFh8N6FrY"></iframe>
-</div> -->
-
----
 
 Viewing any information within VpK requires the user to connect to a snapshot of Kubernetes information.  
 
@@ -24,9 +6,29 @@ Three methods exist to create a VpK Snapshot.  These are:
 
 - From a local install connect to a running k8s cluster
 - From a Docker container install ssh to host machine and connect to a running k8s cluster
-- Use standalone program 'Snapshot' to connect to a running k8s cluster
+- Use stand alone program 'Snapshot' to connect to a running k8s cluster
 
 __NOTE:__ All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) as VpK will issue the kubectl command (or other command) with the needed parameters to connect to the k8s cluster. 
+
+---
+
+### Local running VpK diagram
+
+The VpK server communicates with the kubectl command CLI to query the k8s cluster.
+
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png" width="180" height="112">
+
+---
+
+### Local running VpK diagram
+
+The VpK server communicates with the kubectl command CLI to query the k8s cluster.
+
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_container.png" width="180" height="112">
+
+---
+
+### Create a snapshot
 
 A snapshot is required to view any of the k8s resources so the creation of the snapshot, or connecting to an existing snapshot, should be the first task any time the application is started.  
 
@@ -34,7 +36,7 @@ At the top of the screen from drop-down with the __"Select option"__ value shown
 
 <br>
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/dataSourceDropDown.png" width="180" height="112">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_DropDown.png" width="180" height="112">
 
 <br><br>
 
@@ -72,7 +74,7 @@ The dashed outlined section shown below is only shown if VpK is run from a Docke
 
 <br>
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/ssh-parms.png" width="700" height="700">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_ssh_parms.png" width="700" height="700">
 
 <br><br>
 
@@ -91,7 +93,7 @@ On return to the home screen the newly connect snapshot is shown in the top port
 
 <br>
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/snapshotName.png" width="500" height="54">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_Name.png" width="500" height="54">
 
 <br><br>
 
@@ -99,11 +101,11 @@ Statistics are provided with a count for each resource kind within the cluster o
 
 <br>
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/snapshotStatsKind.png" width="700" height="182">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsKind.png" width="700" height="182">
 
 <br>
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/viewk8s/main/public/docs/docimages/snapshotStatsNS.png" width="700" height="268">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsNS.png" width="700" height="268">
 
 <br><br>
 

@@ -11,7 +11,5 @@ In the scrollable section of the view click on any of the resource icons to view
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_storage.png">
 </p>
 
-
 <hr style="border:1px solid #aaaaaa">
 
-docs/images/config.png
