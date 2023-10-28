@@ -8,7 +8,7 @@ In the scrollable section of the view click on any of the resource icons to view
 
 
 <p align="center">
-  <img style="float: center;" src="/images/tab_storage.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_storage.png?raw=true">
 </p>
 
 

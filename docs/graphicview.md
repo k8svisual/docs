@@ -12,7 +12,7 @@ All charts can be filtered to view one or more namespaces. Once namespace(s) hav
 The Hierarchy chart has grey and red dots.  Red dots can be clicked to view the associated resource definition.
 
 <p align="center">
-  <img style="float: center;" src="/images/tab_graphicview_hierarchy.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_graphicview_hierarchy.png?raw=true">
 </p>
 
 ---
@@ -23,7 +23,7 @@ The Hierarchy chart has grey and red dots.  Red dots can be clicked to view the 
 The Collapsible chart has blue and red dots.  The blue dots can be clicked on to expand or collapse the view. Red dots can be clicked to view the associated resource definition.
 
 <p align="center">
-  <img style="float: center;" src="/images/tab_graphicview_collapsible.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_graphicview_collapsible.png?raw=true">
 </p>
 
 ---
@@ -33,7 +33,7 @@ The Collapsible chart has blue and red dots.  The blue dots can be clicked on to
 The Circle Pack chart has pop-up information and the ability to click the blue dots to view the resource definition.
 
 <p align="center">
-  <img style="float: center;" src="/images/tab_graphicview_circlepack.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_graphicview_circlepack.png?raw=true">
 </p>
 
 
