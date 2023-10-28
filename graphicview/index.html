@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../snapshot/">
+        <link rel="prev" href="../schematics/">
       
       
-        <link rel="next" href="../cluster/">
+        <link rel="next" href="../storage/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Overview - VpK</title>
+        <title>Graphic View - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Graphic View
             
           </span>
         </div>
@@ -314,16 +314,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +325,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -382,9 +374,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../graphicview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -393,6 +392,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -554,14 +554,33 @@
                   
 
 
-  <h1>Overview</h1>
+  <h1>Graphic View</h1>
 
-<p>The Overview tab provides example screen views of the addtional tabs for VpK. These
-screen views are scrolled horizontally across the screen. </p>
-<hr />
-<h3 id="overview-tab">Overview tab</h3>
+<p>Three graphical views are available:</p>
+<ul>
+<li>Hierarchy (fully expanded)</li>
+<li>Collapsible (expand or collapse the hierarchy)</li>
+<li>Circle Pack (each K8s resource is display as a circle) </li>
+</ul>
+<p>All charts can be filtered to view one or more namespaces. Once namespace(s) have been selected press the desired graph button to view the graph.</p>
+<h3 id="hierarchy-view">Hierarchy view</h3>
+<p>The Hierarchy chart has grey and red dots.  Red dots can be clicked to view the associated resource definition.</p>
 <p align="center">
-  <img style="float: center;" src="/images/tab_overview.png?raw=true">
+  <img style="float: center;" src="/images/tab_graphicview_hierarchy.png?raw=true">
+</p>
+
+<hr />
+<h3 id="collapsible-view">Collapsible view</h3>
+<p>The Collapsible chart has blue and red dots.  The blue dots can be clicked on to expand or collapse the view. Red dots can be clicked to view the associated resource definition.</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_graphicview_collapsible.png?raw=true">
+</p>
+
+<hr />
+<h3 id="circlepack-view">CirclePack view</h3>
+<p>The Circle Pack chart has pop-up information and the ability to click the blue dots to view the resource definition.</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_graphicview_circlepack.png?raw=true">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

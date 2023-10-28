@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../snapshot/">
+        <link rel="prev" href="../storage/">
       
       
-        <link rel="next" href="../cluster/">
+        <link rel="next" href="../search/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Overview - VpK</title>
+        <title>Security - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Security
             
           </span>
         </div>
@@ -314,16 +314,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +325,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -422,9 +414,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../security/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -433,6 +432,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -554,17 +554,34 @@
                   
 
 
-  <h1>Overview</h1>
+  <h1>Security</h1>
 
-<p>The Overview tab provides example screen views of the addtional tabs for VpK. These
-screen views are scrolled horizontally across the screen. </p>
+<p><topicKey security/>
+<topicBack id="topicNext" link="search"/>
+<topicNext id="topicBack" link="storage"/></p>
+<p><a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
+<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
+<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a></p>
+<h4 id="security">Security</h4>
 <hr />
-<h3 id="overview-tab">Overview tab</h3>
-<p align="center">
-  <img style="float: center;" src="/images/tab_overview.png?raw=true">
-</p>
+<!-- Color coded views of roles, bindings, and subjects defined for RBAC. -->
 
-<hr style="border:1px solid #aaaaaa">
+<!-- <div style="margin-left: 150px;">
+    <iframe width="700" height="390" src="https://www.youtube.com/embed/zqzGLhoS1VY">
+    </iframe>
+</div> -->
+
+<p>Security provides a view of the role, subject, and binding for resources in the cluster level or selected namespace.  </p>
+<p>From the namespace drop-down select a single namespace.  Once a namespace has been selected press the <strong>View selected namespace</strong> button. </p>
+<p>If there is no selected namespace a warning message is displayed. </p>
+<p>If several binding results will be shown a dialog is shown that allows the filtering of the results to be shown.  Select one or more for the drop-down
+and press the <strong>Filer bindings</strong> button to view.  Press the <strong>Close</strong> button to cancel viewing any results.</p>
+<p>The results are a graph of the security bindings.  Subjects are shown as a rectangle at the top, bindings are shown as an ellipse in the middle, and 
+roles shown as a six-sided object at the bottom of the graph.  Below the Role is a list of the defined rules associated with the Role.</p>
+<p>The use of a dashed bounding line is used to group the objects by namespace. </p>
+<p>Click on any of the displayed color rectangles and the associated resource definition will be displayed.</p>
+<p>The <strong>Legend</strong> button can be pressed to view example shapes and colors for the display.</p>
+<hr />
 
 
 
