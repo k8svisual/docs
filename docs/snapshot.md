@@ -16,7 +16,7 @@ __NOTE:__ All three above options require the user to have connected to a runnin
 
 The VpK server communicates with the kubectl command CLI to query the k8s cluster.
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png" width="180" height="112">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png">
 
 ---
 
@@ -24,7 +24,7 @@ The VpK server communicates with the kubectl command CLI to query the k8s cluste
 
 The VpK server communicates with the kubectl command CLI to query the k8s cluster.
 
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_container.png" width="180" height="112">
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_container.png">
 
 ---
 
@@ -76,7 +76,7 @@ The dashed outlined section shown below is only shown if VpK is run from a Docke
 
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_ssh_parms.png" width="700" height="700">
 
-<br><br>
+<br>
 
 Once the information is provided press the __Connect__ button to begin retrieving the k8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named __cluster__ within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the __Snapshot prefix__ field along with date and time appended.  
 
@@ -108,6 +108,8 @@ Statistics are provided with a count for each resource kind within the cluster o
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsNS.png" width="700" height="268">
 
 <br><br>
+
+### Stand alone program Snapshot
 
 Information for using the standalone program to create the VpK snapshot is available in the 'snapshot' repository:
 
