@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../snapshot/">
+        <link rel="prev" href="../security/">
       
       
-        <link rel="next" href="../cluster/">
+        <link rel="next" href="../ownerref/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Overview - VpK</title>
+        <title>Search - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Search
             
           </span>
         </div>
@@ -314,16 +314,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +325,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -442,9 +434,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../search/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -453,6 +452,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -554,17 +554,107 @@
                   
 
 
-  <h1>Overview</h1>
+  <h1>Search</h1>
 
-<p>The Overview tab provides example screen views of the addtional tabs for VpK. These
-screen views are scrolled horizontally across the screen. </p>
+<p><topicKey search/>
+<topicBack id="topicNext" link="ownerref"/>
+<topicNext id="topicBack" link="security"/></p>
+<p><a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
+<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
+<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a></p>
+<h4 id="search">Search</h4>
 <hr />
-<h3 id="overview-tab">Overview tab</h3>
-<p align="center">
-  <img style="float: center;" src="/images/tab_overview.png?raw=true">
-</p>
+<p>Search Kubernetes defined resources.</p>
+<!-- <div style="margin-left: 150px;">
+    <iframe width="700" height="390" src="https://www.youtube.com/embed/_YY3190mlkw"></iframe>
+</div> -->
 
-<hr style="border:1px solid #aaaaaa">
+<hr />
+<p>Search provides the ability to search all K8s resources.  </p>
+<p>The Search value input field can be used standalone or in conjunction with the Namespace(s) and/or 
+Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.</p>
+<p>The Namespace(s) and Kind(s) searches are performed before searching with the 'Search value' input data.</p>
+<hr />
+<p>The following are the options when using the 'Search value' input field.</p>
+<h5 id="full-search">Full search</h5>
+<p>Enter any text in the 'Search value' input field. Kubernetes resource definitions will be searched for the value regardless of where the value is located.</p>
+<h5 id="limited-searches">Limited searches</h5>
+<p>There are three types of limited searches. Each requires a specific keyword to indicate the associated search is to be performed. 
+Keywords must be entered in lowercase followed with a colon.</p>
+<table>
+<thead>
+<tr>
+<th>Limited search type</th>
+<th>Search Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search for a resource by name.</td>
+<td>name:</td>
+</tr>
+<tr>
+<td>Search labels of the metadata section.</td>
+<td>labels:</td>
+</tr>
+<tr>
+<td>Search annotations of the metadata section.</td>
+<td>annotations:</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h5 id="search-results">Search results</h5>
+<p>The search results are presented in a table format displaying three fields, namespace, kind, and name.     </p>
+<p>Information displayed in the table can be <strong>clicked on</strong> to view the associated resource yaml.  Filtering the table view is available.  Click the open filter button in the results table to select the filter types to be applied.  More than one table filter can be applied at the same time.</p>
+<hr />
+<h5 id="example-searches">Example searches:</h5>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Search value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search all resources for any occurrence of text 'a7be5c9d'.</td>
+<td>a7be5c9d</td>
+</tr>
+<tr>
+<td>Search for resources defined with the name 'bookinfo'.</td>
+<td>name: bookinfo</td>
+</tr>
+<tr>
+<td>Search resource metadata labels that match 'app.kubernetes.io'.</td>
+<td>labels: app.kubernetes.io</td>
+</tr>
+<tr>
+<td>Search resource metadata labels that match 'release' and have the value 'production'.</td>
+<td>labels: release ::value:: production</td>
+</tr>
+<tr>
+<td>Search all resource metadata labels for the value 'server'.</td>
+<td>labels: * ::value:: server</td>
+</tr>
+<tr>
+<td>Search resource metadata annotations that match 'productName'.</td>
+<td>annotations: productName</td>
+</tr>
+<tr>
+<td>Search resource metadata annotations that match 'network' and have the value 'wifi'.</td>
+<td>annotations: network ::value:: wifi</td>
+</tr>
+<tr>
+<td>Search all resource metadata annotations for the value 'click'.</td>
+<td>annotations: * ::value:: operational-task</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<!-- <a style="float: right;" href="javascript:docNextTopic()">&nbsp;&nbsp;Next&nbsp;<i class="fas fa-lg fa-arrow-right"></i></a>
+<a style="float: right;" href="javascript:docNextTopic('toc')">&nbsp;&nbsp;TOC&nbsp;&nbsp;</a>
+<a style="float: right;" href="javascript:docPrevTopic()"><i class="fas fa-lg fa-arrow-left"></i>&nbsp;Prev&nbsp;&nbsp;</a> -->
 
 
 

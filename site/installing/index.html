@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../snapshot/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../cluster/">
+        <link rel="next" href="../snapshot/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Overview - VpK</title>
+        <title>INSTALLING - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              INSTALLING
             
           </span>
         </div>
@@ -217,9 +217,16 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../installing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -228,6 +235,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -255,8 +263,6 @@
       
   
   
-    
-  
   
     
     
@@ -284,12 +290,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -303,7 +309,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             TABS
@@ -314,16 +320,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +331,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -554,16 +552,122 @@
                   
 
 
-  <h1>Overview</h1>
+  <h1>INSTALLING</h1>
 
-<p>The Overview tab provides example screen views of the addtional tabs for VpK. These
-screen views are scrolled horizontally across the screen. </p>
+<h3 id="install-and-run-vpk-locally">Install and run VpK locally</h3>
+<p>Vpk is an application that can run locally on your computer as a node.js application or run inside a Docker container.  </p>
+<p>The prerequiste software:</p>
+<ul>
+<li>browser - must support html 5 for the user interface </li>
+<li>node.js and npm - install node packages and run the VpK server component </li>
+<li>kubectl - Kubernetes command line tool or other CLI used to communicate with a k8s cluster </li>
+</ul>
+<p>Optional software:
+- Docker desktop</p>
+<p>VpK software is available from the following GitHub repository:  </p>
+<p><strong>https://github.com/k8svisual/vpk.git</strong>   </p>
+<p>Clone the repository or download the zip.  If using zip file, unzip file into a directory.  Change to the directory where the software is located and install the required node.js packages using the following command: </p>
+<div class="highlight"><pre><span></span><code>npm install
+</code></pre></div>
+<p>Local installation of VpK is completed at this point.</p>
+<h3 id="running-vpk-locally">Running VpK locally</h3>
+<p>Ensure to have changed to the directory where the software is installed.  Start the VpK server software by using this command: </p>
+<div class="highlight"><pre><span></span><code>npm start
+</code></pre></div>
+<p>The server portion of VpK is started using the default port 4200.</p>
+<p>Access the VpK server by opening a browser with the following url:</p>
+<div class="highlight"><pre><span></span><code>http://localhost:4200
+</code></pre></div>
+<p>The above url assumes the VpK server is running on the same machine where the browser is launched.  If not
+replace the 'localhost' with the server address.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>See the below section <strong>Optional start parameters</strong> for more information on the options when starting and running the VpK server.</p>
+</div>
 <hr />
-<h3 id="overview-tab">Overview tab</h3>
-<p align="center">
-  <img style="float: center;" src="/images/tab_overview.png?raw=true">
-</p>
-
+<h3 id="install-and-run-vpk-from-a-container">Install and run VpK from a container</h3>
+<p>VpK is available as a Docker container image on the dockerhub web site: </p>
+<p><strong>https://hub.docker.com/repository/docker/k8svisual/viewk8s/general</strong></p>
+<p>To install VpK using a Docker image use the following command:</p>
+<div class="highlight"><pre><span></span><code>docker pull k8svisual/vpk
+</code></pre></div>
+<h3 id="running-vpk-from-a-container">Running VpK from a container</h3>
+<p>The container runs the VpK server and hosts the web application at the default port 4200.</p>
+<p>Two parameters are used when statring the container.</p>
+<table>
+<thead>
+<tr>
+<th>Parm</th>
+<th>Req/Opt</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-v</td>
+<td>Required</td>
+<td style="text-align: left;">Volume parameter to define the location of the 'snapshot' files on the host machine.</td>
+<td style="text-align: left;">none</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>Optional</td>
+<td style="text-align: left;">Port to access the VpK web site running in the container.</td>
+<td style="text-align: left;">4200</td>
+</tr>
+</tbody>
+</table>
+<p>Example command to run VpK from a Docker container. Replace "SNAPDIR" with the directory for the local stored snapshots. </p>
+<div class="highlight"><pre><span></span><code>docker run -v SNAPDIR:/vpk/cluster
+</code></pre></div>
+<p>Example command to run VpK from a Docker container with parameters for snapshot data directory and mapping local port 8000 to the default 4200 port. Replace "SNAPDIR" with the directory for the local stored snapshots. </p>
+<div class="highlight"><pre><span></span><code>docker run -v SNAPDIR:/vpk/cluster -p 8000:4200 k8svisual/vpk
+</code></pre></div>
+<p><br></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Refer to the Snapshots section of this documentation for detailed information about creating
+the snapshot files from a Kubernetes cluster.</p>
+</div>
+<hr />
+<h3 id="optional-start-parameters">Optional start parameters</h3>
+<p>VpK has the following start parameters.  Default values will be used is no start parameters are provided. </p>
+<div class="admonition warn">
+<p class="admonition-title">Warn</p>
+<p>These are not parameters for Docker! These parameters are used by VpK when the server is started.</p>
+</div>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">&nbsp;Start Parameter&nbsp;</th>
+<th>Usage description</th>
+<th>Default</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">-c</td>
+<td>Indicate the VpK server/application is running in a container. <br> This enables the ability to send commands from the UI to the container and use the ssh feature to communicate with the container host to create a k8s snapshot.</td>
+<td>&lt;blank&gt;</td>
+<td>-c Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">-p</td>
+<td>Control the port where the server can be accessed from a browser.</td>
+<td>4200</td>
+<td>-p 5400</td>
+</tr>
+<tr>
+<td style="text-align: center;">-s</td>
+<td>Control the location of snapshot directories and files</td>
+<td>&lt;blank&gt;</td>
+<td>-s /Users/snap</td>
+</tr>
+</tbody>
+</table>
 <hr style="border:1px solid #aaaaaa">
 
 

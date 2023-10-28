@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../snapshot/">
+        <link rel="prev" href="../cluster/">
       
       
-        <link rel="next" href="../cluster/">
+        <link rel="next" href="../graphicview/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Overview - VpK</title>
+        <title>Workload Schematics - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Workload Schematics
             
           </span>
         </div>
@@ -314,16 +314,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +325,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -362,9 +354,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../schematics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -373,6 +372,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -554,14 +554,44 @@
                   
 
 
-  <h1>Overview</h1>
+  <h1>Workload Schematics</h1>
 
-<p>The Overview tab provides example screen views of the addtional tabs for VpK. These
-screen views are scrolled horizontally across the screen. </p>
+<p>From the namespace drop-down select one or more namespaces.  Once namespace(s) have been selected press the <strong>View Schematic(s)</strong> button. </p>
+<p>A button for each selected namespace will be displayed.  Press one or more buttons to view the associated schematics for the namespace.  </p>
+<p>If the button is yellow the namespace has no deployed and running pods.</p>
 <hr />
-<h3 id="overview-tab">Overview tab</h3>
+<h3 id="workload-schematics-tab">Workload Schematics tab</h3>
 <p align="center">
-  <img style="float: center;" src="/images/tab_overview.png?raw=true">
+  <img style="float: center;" src="/images/tab_workloadschematics.png?raw=true">
+</p>
+
+<hr />
+<p>Mouse over each of the icons in the schematic for summary information for associated resources.  Example of the pop-up when scrolling over the 'Secrets' icon.</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_workloadschematics_rollover.png?raw=true">
+</p>
+
+<p>Click the icon to view the resource definition.  If more than one resource is defined for the icon a selection dialog is shown to allow selecting the individual resources definitions.</p>
+<p>For resource kind <em>Secret</em> there will be a screen allowing the ability to view the Secret yaml or the base64 information decoded.</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_workloadschematics_resources.png?raw=true">
+</p>
+
+<p>When the 'Decode' button is pressed for a Secret the data is decoded and displayed.  Example:</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_workloadschematics_decode.png?raw=true">
+</p>
+
+<p>When a resoruce button is pressed the defintion of the source of the resource is shown in a view only modal screen.</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_workloadschematics_source.png?raw=true">
+</p>
+
+<p>The light gray bar at the top of the schematic represents namespace level resources for the workload.  The dark gray bar on the righthand side of the schematic has cluster level resources.</p>
+<p>When the 'Namespace' icon in the light gray bar is pressed a scrollable list of all resources defined in the 
+namespace is shown.  Click any of the lines of data to view the resource definition.</p>
+<p align="center">
+  <img style="float: center;" src="/images/tab_workloadschematics_namespace.png?raw=true">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

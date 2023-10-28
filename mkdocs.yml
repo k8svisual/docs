@@ -44,7 +44,7 @@ theme:
     - toc.follow
 
 extra:
-  homepage: https://k8svisual.github.io/vpk
+  homepage: https://k8svisual.github.io/vpk-docs
   generator: false
 
 # Adding a custom CSS stype sheet
