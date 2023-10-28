@@ -12,7 +12,7 @@ __NOTE:__ All three above options require the user to have connected to a runnin
 
 ---
 
-### Local running VpK diagram
+### Local machine running VpK
 
 The VpK server communicates with the kubectl command CLI to query the k8s cluster.
 
@@ -20,9 +20,9 @@ The VpK server communicates with the kubectl command CLI to query the k8s cluste
 
 ---
 
-### Local running VpK diagram
+### Docker container running VpK
 
-The VpK server communicates with the kubectl command CLI to query the k8s cluster.
+The VpK server communicates with the kubectl command CLI to query the k8s cluster from the Docker container to the local host via SSH.
 
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_container.png">
 
