@@ -1,0 +1,63 @@
+# Retirement Planner MkDocs & Material config
+site_name: VpK
+
+nav:
+  - Introduction: index.md
+  - Overview: overview.md
+  - Working with the plan: adjust.md
+  - User Interface: ui.md
+  - FAQ: faq.md
+  - Download software: download.md
+
+theme:
+  name: material
+  palette:
+    primary: #ffff00
+    scheme: default
+  favicon: images/allLogo.png
+  logo: images/vpk.png
+  features:
+    - navigation.top
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+extra:
+  homepage: https://k8svisual.github.io
+  generator: false
+
+# Adding a custom CSS stype sheet
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - meta
+  - tables
+  - admonition
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  # supress the TOC by using depth of 1-1
+  - toc:
+      toc_depth: "1-1"
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+copyright: Copyright &copy; 2023 k8svisual
