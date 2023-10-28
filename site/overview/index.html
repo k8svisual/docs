@@ -1,0 +1,477 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../adjust/">
+      
+      
+      <link rel="icon" href="../images/allLogo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Overview - VpK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://k8svisual.github.io" title="VpK" class="md-header__button md-logo" aria-label="VpK" data-md-component="logo">
+      
+  <img src="../images/vpk.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VpK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://k8svisual.github.io" title="VpK" class="md-nav__button md-logo" aria-label="VpK" data-md-component="logo">
+      
+  <img src="../images/vpk.png" alt="logo">
+
+    </a>
+    VpK
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adjust/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with the plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Overview</h1>
+
+<h2 id="starting-the-software">Starting the software</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All screen images shown in this documentation are taken while using Microsoft &reg; Excel for Mac. Screens for Microsoft &reg; Excel running on Microsoft Windows will be different.</p>
+</div>
+<p>This software is a spreadsheet built using Microsoft &reg; Excel with macros used for many of the features.  The use of macros within a spreadsheet will cause a warning message and prompt the user about their use. </p>
+<p><img align="right" alt="ImportMsg" src="images/allMacrosPrompt.png" width="432" /></p>
+<p>For this software to fully function the spreadsheet macros must be enabled.  This is the message prompt that is shown when starting Retirement Planner. Press the <strong>Enable Macros</strong> button to continue with all features enabled.  </p>
+<p><br><br><br><br></p>
+<p><img align="right" alt="DisabledMacros" src="images/allDisabledMacros.png" width="260" /></p>
+<p>If the Disable Macros button is pressed this will render features of the software as non-functional. </p>
+<p>This message box will be shown when attempting to execute a feature and macros have been disabled.  </p>
+<p><br></p>
+<h2 id="protected-startup">Protected startup</h2>
+<p>Each time the software is started, with macros enabled, a macro is executed that protects all tabs with a default password. If macros are not enabled, no protection of tabs is performed, and the default tab will be the last used tab when the software was closed. At any time, any sheet/tab can be unprotected thus allowing changes to protected areas or features of the tab.  If a tab is protected with a different password, that new password will be reset to the default password when the software is closed and started.  </p>
+<div class="admonition important">
+<p class="admonition-title">Default password for all sheets/tabs</p>
+<p>Password: <strong>retire</strong> (all lowercase letters)</p>
+</div>
+<p>This feature is designed to guarantee protection of tabs and ensure a standard password is defined.</p>
+<h2 id="first-screen">First screen</h2>
+<p>After responding to the macro warning prompt, and enabling macros, the first screen that is shown is the Welcome tab.  The Welcome tab is the default first screen.  The default first screen can be changed to the Home tab by changing an option on the Settings tab.  </p>
+<p><img align="right" alt="Home-Gears" src="images/homeGears.png" width="50" /></p>
+<p>The Settings tab is accessed by clicking the green gear in the upper right-hand side of the Home tab.   </p>
+<p><img align="right" alt="FirstScreen-Home" src="images/allStartupFirstScreen.png" width="300" />
+<img align="left" alt="FirstScreen-Welcome" src="images/welcome.png" width="300" /></p>
+<p><br><br><br><br><br><br><br><br></p>
+<hr />
+<h2 id="green-calculator-message">Green calculator message</h2>
+<p>The default setting is for an informational message box to be shown at startup.  This message informs the user that the green calculator icon on this tab and the Retire tab must be pressed when prompted.  The prompt will be a message with red background indicating the green calculator icon should be pressed. The OK button shown in the message box must be pressed to continue and begin using use this software. </p>
+<p><img align="right" alt="CalulatorMessage" src="images/allCalculateInfo.png" width="260" /></p>
+<p>This startup message can be suppressed by an option in the Settings tab. The option is titled <strong>Display Green Calculator message at startup</strong>. Modify the setting to 'N' to suppress the message.</p>
+<p><br><br><br><br><br><br><br><br><br></p>
+<h2 id="other-screens">Other screens</h2>
+<p>The following diagram shows the screens (Excel tabs) that are shown in this software.  The default tabs, shown when the software is started, have icons that link to other tabs.  Default tabs are shown in the top of the image, optional tabs shown in middle, and developer tabs shown in the bottom.  </p>
+<p>Developer tabs are shown in the diagram for completeness yet are only available when the Visual Basic feature of the Excel menu option Developer is enabled.  The Developer menu option is out of scope for this documentation.</p>
+<p><img alt="ImportMsg" src="images/allTabHeirarchy.png" width="700" />  </p>
+<p>For a description of any Default or Optional tab refer to the <a href="/ui">User Interface</a> section of this documentation, select Tab detail, and then select the tab name to view the tab description.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Several tabs are used to enter and maintain data needed to create the retirement plan.  From the Overview tab data from four different scenarios can be loaded.  Once loaded the scenario can be reviewed and modified to gain familiarity and understanding of the software. To load a scenario, from the Overview tab, scroll to the four green scenario buttons.  A brief description each of the scenarios is shown below the associated green button.  Click on any one of the buttons to load the associated data.  </p>
+<p><img alt="ImportMsg" src="images/overviewScenarios.png" width="700" /></p>
+<p>When done exploring a scenario, if desired, another scenario can be loaded and reviewed.  It is important to understand that when loading a scenario all existing data will be over-written.</p>
+<hr />
+<h3 id="-data-import-">- Data import -</h3>
+<p><img align="left" alt="ImportMsg" src="images/overviewScenarioImport.png" width="260" /></p>
+<p>Pressing any of the scenario buttons will start the data import feature of this software.  A message prompt to confirm the import of the scenario is shown.  Press the Yes or No button to respond as appropriate.  </p>
+<p><br><br></p>
+<hr />
+<h2 id="create-your-first-plan-in-15-minutes-or-less">Create your first plan in 15 minutes or less</h2>
+<p>This software has no capability to clear all data.  To get started with a retirement plan it is recommended to select and load a scenario as a starting point, then modify as needed.  </p>
+<p>Since this software is intended to provide a long-range estimated financial plan start with estimated financial information. For most people their information is spread across multiple online accounts and not easy to access.  The first attempt to enter data can be a best guess effort.  The following is a possible guide for getting started.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Estimated dollar amounts are OK</p>
+<p>Don't let accuracy be the enemy of creating a plan. Estimated dollar amounts are fine to get started.  Values will change as the plan evolves over time.  </p>
+</div>
+<p>Since starting with data from one of the scenarios be sure to clear out any data that is no longer needed.</p>
+<ul>
+<li>
+<p><strong>Individual tab</strong> - Enter name(s), date of birth(s), retirement start year, tax filing status, and tax state. Be sure to press the Update tax tables button. </p>
+</li>
+<li>
+<p><strong>Assets tab</strong> - Enter data in the Vehicles, Housing, and Investments.  Using estimated amounts for Current Values is typically a good starting point.  If you know the actual amounts that's great.  You can always come back and update the values.</p>
+</li>
+<li>
+<p><strong>Budget tab</strong> - For first time users this tab is often the most challenging.  Getting starting it may be easier to use a single dollar amount for each of the major sections e.g. Housing, Transportation, Utilities, etc.  If a category doesn't need to be used simply zero out the dollar amounts and go on the next category.  This approach can help get started but the budget must be accurate at some time to generate the best plan.  The existing line-item descriptions in each category can be changed to meet your needs.  These line items are provided to help identify possible ways your money is spent.  Don't cheat yourself and skip entering line items of where money is spent. </p>
+</li>
+<li>
+<p><strong>Income tab</strong> - Enter your monthly gross income, start year, percent of increase, and percent taxable.</p>
+</li>
+<li>
+<p><strong>Retire tab</strong> - Using the green and red chevron icons to change the average rate of return, and annual inflation rate. Press the green calculator icon and wait as the plan is generated.  </p>
+</li>
+</ul>
+<p>Congratulations, the first plan is created. Now it's time to review the plan and iterate through each tab and update data as needed to create a more accurate plan.</p>
+<hr style="border:1px solid green">
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 k8svisual
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,504 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../ui/">
+      
+      
+      <link rel="icon" href="../images/allLogo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Working with the plan - VpK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://k8svisual.github.io" title="VpK" class="md-header__button md-logo" aria-label="VpK" data-md-component="logo">
+      
+  <img src="../images/vpk.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VpK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Working with the plan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://k8svisual.github.io" title="VpK" class="md-nav__button md-logo" aria-label="VpK" data-md-component="logo">
+      
+  <img src="../images/vpk.png" alt="logo">
+
+    </a>
+    VpK
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Working with the plan
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Working with the plan</h1>
+
+<p>Retirement Planner software provides several capabilities to enter and modify data.  This topic will provide information about what data can or should be changed to evaluate possible <strong>what if</strong> options in the plan.  </p>
+<p>As mentioned in the <a href="/welcome">Welcome</a> topic of this documentation there are three points of control provided 1) Retirement Year, 2) Average Rate of Return, and 3) Annual Inflation Rate.  Other than adjusting these points of control what other ways are there to evaluate the <strong>what if</strong> of retirement. </p>
+<p>The following topics discuss control points and user entered data for expenses and income.</p>
+<h2 id="expenses">Expenses</h2>
+<h3 id="control-point">Control Point</h3>
+<p>The software automatically adjusts the annual expenses to increase by the inflation rate. Adjusting the annual inflation rate can either increase or decrease expenses based on the adjustment.  Use the colored chevrons on the Home or Retire tabs to adjust the annual inflation rate.</p>
+<h3 id="user-entered-data">User entered data</h3>
+<p>The Budget tab is the primary tab to enter expenses. Though more than one tab is used to enter expenses and taxes. Consider the following:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tab</th>
+<th style="text-align: left;">Describe</th>
+<th style="text-align: left;">Entry / Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Budget</td>
+<td style="text-align: left;">Expenses are occurring now.</td>
+<td style="text-align: left;">Enter in the Budget tab using the standard input fields. Ensure the expense amount and annual frequency are correct.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Budget</td>
+<td style="text-align: left;">One or more expenses will be different at retirement.</td>
+<td style="text-align: left;">For the specific line item on the Budget tab use the field in the column <strong>(+/-) Monthly Adjust at Retirement</strong> to modify the expense amount. To properly adjust the budget ensure the value is entered as a monthly amount.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Housing<br><br>Transportation<br><br>Med-Insur</td>
+<td style="text-align: left;">Expenses have increased for the category.</td>
+<td style="text-align: left;">From the Budget tab select the pencil icon for the appropriate tab.  Modify the expenses as needed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retire</td>
+<td style="text-align: left;">After retirement starts the annual budget needs to increase or decrease for a single year.</td>
+<td style="text-align: left;">From the Retire tab, in the column titled <strong>Single Year Monthly Budget Adj. (+/-)</strong>, locate the year the adjustment is needed and enter the monthly adjustment amount.  <br><br> Example adjustments: <br> * Increase in medical insurance premiums till Medicare is available. <br> * Increase the budget to cover car payments.  If finance over a period of years create adjustments for multiple years. <br> *  Decrease the budget because a one-time rebate will be received.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retire</td>
+<td style="text-align: left;">After retirement starts the annual budget needs to increase or decrease for all future years.</td>
+<td style="text-align: left;">From the Retire tab, in the column titled <strong>Multi-year Monthly Budget Adj. (+/-)</strong>, locate the start year for the adjustment and enter the monthly adjusment amount.  <br><br> Example adjustments: <br> * House mortgage will be paid off. <br> * Planning to sell a car, boat, or other property.  <br> *  Project a slow down in activities as one ages.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rental</td>
+<td style="text-align: left;">Rental property maintenance costs are increasing.</td>
+<td style="text-align: left;">Access the Rental tab from either the Assets or Income tabs.  For the appropriate rental property modify the field(s) <strong>Annual Repairs</strong> and/or <strong>Expenses Increase %</strong> to reflect the increase.  This change to annual repairs will impact the calculated Yearly Net Income for the associated rental property and the net amount will be reflected on the Income tab.  With information form the Income tab used to calculate the Retirement Plan.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Individuals</td>
+<td style="text-align: left;">Income tax filing status or state has changed.</td>
+<td style="text-align: left;">From the drop-down selection fields <strong>Status and/or State</strong> on the Individuals tab modify the tax filing information.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TaxRates</td>
+<td style="text-align: left;">City or County taxes have changed.</td>
+<td style="text-align: left;">From either the Individuals or Income tab click the pencil to open Detail Tax Data.  Modify the city or county taxes as required.  The button labeled 'Update tax tables' must be pressed to update the tax calculation formulas.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="rmd-related-expenses">RMD related expenses</h4>
+<p>During the plan generation the Required Minimum Distribution (RMD) withdrawal amount may not be met requiring an adjustment of additional funds needing to be withdrawn from Before tax investments.  Taxes for this adjustment amount will be subtracted from the total adjustment amount and the net difference added to the After-tax balance for future use.</p>
+<div class="admonition caution">
+<p class="admonition-title">Avoid the 50% penalty</p>
+<p>An RMD is the annual Required Minimum Distribution that you must start taking out of your retirement account after you reach age 70 or 72. If you are born after July 1, 1949 the trigger date moves from 70 to 72.  The RMD amount is determined by the fair market value of an individuals before tax funds at the end of the previous year, factored by your age and life expectancy.  The IRS penalty for not taking an RMD, or for taking less than the required amount, is steep: 50% of the amount not taken on time. The deadline to take your first RMD is normally April 1 of the year after you turn 72, and December 31 each following year.</p>
+</div>
+<hr />
+<h2 id="income">Income</h2>
+<h3 id="control-point_1">Control Point</h3>
+<p>Adjusting the average rate of return (RoR) by using the colored chevrons on the Home or Retire tabs.  Increasing ROR by a half a percent can have significant impact over time.  While increasing RoR is important it may be equally important to understand how low of a RoR one can accept before having a negative impact. A lower RoR often means a lower risk profile and less impact to funds when markets  </p>
+<h3 id="user-entered-data_1">User entered data</h3>
+<p>Two tabs, Income and the Investments section of Assets tab are used to enter most income.  The Rental property is defined that will also impact income.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tab</th>
+<th style="text-align: left;">Describe</th>
+<th style="text-align: left;">Entry / Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Income</td>
+<td style="text-align: left;">Receiving a pension and Social Security benefits.</td>
+<td style="text-align: left;">Enter both sources of income on the Income tab.  Ensure the taxable percentage is properly set for the Social Security benefits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Income</td>
+<td style="text-align: left;">Currently employed and plan to change jobs in the next year or two.</td>
+<td style="text-align: left;">Enter the current job salary on the Income tab and the estimated year to quit.  Enter the anticipated new job start year, salary, and percent of increase as a second source.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Assets</td>
+<td style="text-align: left;">Getting a 4% RoR for a 401(k) that gets annual contributions of $15,000</td>
+<td style="text-align: left;">In the Investments section of the Assets tab enter the Category Item ID, current 401(k) balance, expected RoR or 4%, annual contribution of $15,000, select Before Tax, and select the correct owner. Press the eyeball icon on the left-hand side of this section to view the estimated future value of this investment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rental</td>
+<td style="text-align: left;">Rental property has monthly rent of $1,200.</td>
+<td style="text-align: left;">From the Rental section of the Assets tab click the pencil icon on the left-hand side to open the Rental tab.  For the appropriate property modify the field <strong>Monthly Rent</strong>.  If there is an annual increase that should also be entered in the <strong>Annual rent increase %</strong> field.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 k8svisual
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+    
+  </body>
+</html>

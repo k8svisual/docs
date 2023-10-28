@@ -44,9 +44,6 @@ The output from the kubectl CLI is processed to create multiple files that are c
   <img style="float: center;" src="/images/overview-local.png?raw=true" width="1024" height="542">
 </p>
 
-
-
-
 <br>
 <hr style="border:1px solid blue">
 
