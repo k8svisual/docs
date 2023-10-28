@@ -28,20 +28,27 @@ The VpK server communicates with the kubectl command CLI to query the k8s cluste
 
 ---
 
-### Create a snapshot
+### Create a snapshot 
 
 A snapshot is required to view any of the k8s resources so the creation of the snapshot, or connecting to an existing snapshot, should be the first task any time the application is started.  
 
-At the top of the screen from drop-down with the __"Select option"__ value shown select the desired option to create or obtain a snapshot.  
+At the top of the screen from drop-down box select the desired option to create or use and existing snapshot.  
 
-<br>
+#### Drop-down when running locally
 
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_DropDown.png" width="180" height="112">
 
-<br><br>
 
-First time usage of VpK will have no existing snapshots.  The __Running cluster__ option must be selected to create a snapshot. 
-Once selected the user provides information to connect to the Kubernetes cluster.  Input fields are:
+#### Drop-down when running from Docker container
+
+<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_dropdown_container.png" width="180" height="132">
+
+
+!!! Note
+
+    The first time usage of VpK will have no existing snapshots.  The "__Running cluster__" option must be selected to create a snapshot.  
+
+Once an option is selected provide the information to connect to the Kubernetes cluster.  Input fields are:
 
 | Field | Description | Default |
 |---|---|:---:|
@@ -61,9 +68,10 @@ __sshpass__ and __ssh__ commands.  The host machine must have ssh enabled for th
 | User | An existing user on the host machine that is allowed to execute the 'kubectl' or other command. |
 | Password | The password of the user that is provided.  |
 
-<br><br>
+<br>
 
-__Example sshpass and ssh command:__
+### Example sshpass and ssh command
+
 ```
 sshpass -p 'password'   ssh -o StrictHostKeyChecking=no  user@host-ip  'kubectl (along with parameters)'
 ```
@@ -72,34 +80,35 @@ sshpass -p 'password'   ssh -o StrictHostKeyChecking=no  user@host-ip  'kubectl 
 
 The dashed outlined section shown below is only shown if VpK is run from a Docker container.
 
-<br>
-
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_ssh_parms.png" width="700" height="700">
 
-<br>
 
 Once the information is provided press the __Connect__ button to begin retrieving the k8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named __cluster__ within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the __Snapshot prefix__ field along with date and time appended.  
 
 <br>
 
+Example snapshot directory name that will be created: 
 ```
-Example snapshot directory name: vpk-2022-10-26-14h-16m-46s
+vpk-2022-10-26-14h-16m-46s
 ```
 <br>
 
-When accessing a running Kubernetes cluster a series of processing messages will be displayed in the bottom portion of the dialog.  Returning to the main screen requires closing the dialog by pressing the __Close__ button.
+### Connected to k8s
+
+While quering the connected Kubernetes cluster a series of processing messages will be displayed in the bottom portion of the dialog.  Returning to the main screen requires closing the dialog by pressing the "__Close__" button.
 
 On return to the home screen the newly connect snapshot is shown in the top portion of the screen.  The complete directory path is shown.  The displayed snapshot path is also a button that can be pressed to view statistics for the snapshot.
 
 <br>
 
+### Snapshot that is connected
+
+Once returned to the home screen of VpK the selected snapshot is shown in the upper portion of the screen.
+
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_Name.png" width="500" height="54">
 
-<br><br>
+The snapshot name shown is also a button that can be pressed to view statistics.  Statistics for the connected snapshot are provided with a count for each resource kind within the cluster or count of resource kinds within a namespace.  
 
-Statistics are provided with a count for each resource kind within the cluster or count of resource kinds within a namespace.
-
-<br>
 
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsKind.png" width="700" height="182">
 
@@ -117,8 +126,5 @@ Information for using the standalone program to create the VpK snapshot is avail
 http://github.com/k8svisual/snapshot.git/ 
 ```
 
-<br><br>
+<hr style="border:1px solid #aaaaaa">
 
----
-
-<!-- sudo systemsetup -setremotelogin on -->
