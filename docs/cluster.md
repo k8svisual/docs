@@ -13,7 +13,7 @@ The __Legend__ button provides information related to the displayed icons and pl
 ### Cluster tab
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_cluster.png?raw=true" width="1280" height="720">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster.png">
 </p>
 
 ---
@@ -21,7 +21,7 @@ The __Legend__ button provides information related to the displayed icons and pl
 ### Cluster Legend
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_cluster_legend.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_legend.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

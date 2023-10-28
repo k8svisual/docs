@@ -12,7 +12,7 @@ If the button is yellow the namespace has no deployed and running pods.
 ### Workload Schematics tab
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_workloadschematics.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics.png">
 </p>
 
 ---
@@ -20,7 +20,7 @@ If the button is yellow the namespace has no deployed and running pods.
 Mouse over each of the icons in the schematic for summary information for associated resources.  Example of the pop-up when scrolling over the 'Secrets' icon.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_workloadschematics_rollover.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_rollover.png">
 </p>
 
 
@@ -29,19 +29,19 @@ Click the icon to view the resource definition.  If more than one resource is de
 For resource kind _Secret_ there will be a screen allowing the ability to view the Secret yaml or the base64 information decoded.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_workloadschematics_resources.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_resources.png">
 </p>
 
 When the 'Decode' button is pressed for a Secret the data is decoded and displayed.  Example:
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_workloadschematics_decode.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_decode.png">
 </p>
 
 
 When a resoruce button is pressed the defintion of the source of the resource is shown in a view only modal screen.
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_workloadschematics_source.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_source.png">
 </p>
 
 
@@ -51,7 +51,7 @@ When the 'Namespace' icon in the light gray bar is pressed a scrollable list of 
 namespace is shown.  Click any of the lines of data to view the resource definition.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/tab_workloadschematics_namespace.png?raw=true">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_namespace.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
