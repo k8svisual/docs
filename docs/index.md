@@ -14,7 +14,7 @@ The output from the kubectl CLI is processed to create multiple files that are c
 ### Overview diagram
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/main/docs/images/overview_local.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png">
 
 </p>
 
