@@ -1,7 +1,6 @@
 
-##### User Interface
 
-The User Interface (UI), browser component, provides graphical views along a tabular search results view of resources defined and deployed in the cluster.
+The User Interface (UI), browser component, provides multiple graphical views of resources along a tabular search results view of resources defined and deployed in the cluster.
 Tabs for each type of view and searching are shown in the upper portion of the UI.  Once a tab is selected 
 
 ##### Interactions

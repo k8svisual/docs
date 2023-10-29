@@ -5,7 +5,8 @@ nav:
   - INTRODUCTION: index.md
   - INSTALLING: installing.md
   - SNAPSHOTS: snapshot.md
-  - TABS:
+  - USER INTERFACE: ui.md
+  - UI TABS:
       - Overview: overview.md
       - Cluster: cluster.md
       - Workload Schematics: schematics.md
@@ -14,7 +15,6 @@ nav:
       - Security: security.md
       - Search: search.md
       - OwnerRef Links: ownerref.md
-  - USER INTERFACE: ui.md
   - FAQ: faq.md
 
 theme:

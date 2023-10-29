@@ -27,6 +27,7 @@ Local installation of VpK is completed at this point.
 
 
 
+
 ### Running VpK locally
 
 Ensure to have changed to the directory where the software is installed.  Start the VpK server software by using this command: 
