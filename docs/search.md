@@ -10,7 +10,7 @@ The Namespace(s) and Kind(s) searches are performed before searching with the 'S
 ### Search screen
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_searchy_table.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_search.png">
 </p>
 
 ---
@@ -66,7 +66,7 @@ Filtering the results table view is available by entering a value in the "__Sear
 The search results table has several controls.  There are identified in the following image.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_searchy_table.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_search_table.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

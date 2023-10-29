@@ -7,6 +7,8 @@ Three graphical views are available:
 
 All charts can be filtered to view one or more namespaces. Once namespace(s) have been selected press the desired graph button to view the graph.
 
+<hr style="border:1px solid #aaaaaa">
+
 ###  Hierarchy view
 
 The Hierarchy chart has grey and red dots.  Red dots can be clicked to view the associated resource definition.
@@ -15,7 +17,7 @@ The Hierarchy chart has grey and red dots.  Red dots can be clicked to view the 
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_graphicview_hierarchy.png">
 </p>
 
----
+<hr style="border:1px solid #aaaaaa">
 
 ###  Collapsible view
 
@@ -26,7 +28,7 @@ The Collapsible chart has blue and red dots.  The blue dots can be clicked on to
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_graphicview_collapsible.png">
 </p>
 
----
+<hr style="border:1px solid #aaaaaa">
 
 ###  CirclePack view
 
