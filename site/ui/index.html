@@ -554,38 +554,79 @@
 
   <h1>USER INTERFACE</h1>
 
-<p>The User Interface (UI), browser component, provides multiple graphical views of resources along a tabular search results view of resources defined and deployed in the cluster.  Tabs are used to present the different features of VpK. </p>
-<p>Create or select a snapshot. Once selection and processing is complete the UI will switch to the "Cluster" tab.</p>
-<hr />
+<p>The User Interface (UI), browser component is comprised of a top section and a series of tabs. The tabs provide graphical views of the cluster; deployed workloads; graphs (hierarchy, collapible hierarchy, and circle pack); storage requests with sizes and hierarchy; security; search; and owner references hierarchy.</p>
 <h3 id="screen-interactions">Screen Interactions</h3>
-<p>VpK user interface (UI) is designed to provide graphical and tabular information about the selected Kubernetes cluster.</p>
+<p>Interaction with the user interface provides the ability to drill down to obtain additional information.  These interactions include:</p>
 <ul>
+<li>From the 3D Cluster view click on any of the items in the view.</li>
 <li>If you see an icon, click on it. </li>
 <li>If you see a blue or red circle in a hierarchy diagram, click on it.</li>
 <li>If you see a blue circle in a circle pack diagram, click on it.</li>
-<li>From the 3D Cluster view click on any of the items in the view.</li>
-<li>From the Security and OwnerRef Links click on any color object.</li>
+<li>From the Security and OwnerRef Links click on any color shaped object.</li>
 </ul>
+<h3 id="splash-screen">Splash screen</h3>
+<p>When the application is started a splash screen is shown.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_startup.png">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="top-section-of-screen">Top section of screen</h3>
+<p>The top of the screen provides the ability to create or select a snapshot, open help, configuration, and shutdown the application.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_top.png">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="snapshots">Snapshots</h3>
+<p>All data to be used by VpK is stored in a snapshot. The snapshot drop down field is how to get started in creating or selecting a snapshot.  For detail snapshot information refer to the "<strong>SNAPSHOTS</strong>" category in this documentation site.</p>
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="help">Help</h3>
+<p>A build-in help system is available when using VpK.  Select this option to open the help system. </p>
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="shutdown">Shutdown</h3>
+<p>VpK can be stopped by selecting the "X" button in the upper right portion of the home screen.  Press the button and confirm the shutdown by pressing the "<strong>Shutdown</strong>" button.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_confirm.png">
+</p>
+
 <hr />
+<p>Once shutdown has completed the following screen is shown.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_complete.png">
+</p>
+
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If VpK is running in a Docker container the container will stop at this time</p>
+</div>
+<hr style="border:1px solid #aaaaaa">
+
 <h3 id="configuration">Configuration</h3>
 <p>From the home screen click the gear in the upper right portion of the screen to open the VpK configuration.   </p>
 <p>Two item are configurable, displaying of "managedFields" and displaying of the "status" section in the resource definition when shown.</p>
 <p>Viewing of system usage information is also available from this screen.</p>
-<h3 id="configuration-screen">Configuration screen</h3>
+<h4 id="configuration-screen">Configuration screen</h4>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config.png">
 
 </p>
 
-<h3 id="usage-information-screen">Usage information screen</h3>
+<h4 id="usage-information-screen">Usage information screen</h4>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/about.png">
 
 </p>
 
-<h3 id="stopping-vpk">Stopping VpK</h3>
-<p>VpK can be stopped by selecting the "X" button in the upper right portion of the home screen.  Press the button and 
-confirm the shutdown by pressing the "<strong>Shutdown</strong>" button.</p>
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="tabs">Tabs</h3>
+<p>Information for each of the tabs is included in the "<strong>UI TABS</strong>" category of this documentation.  Each tab is listed along with descriptions and instructions on usage.</p>
 <hr style="border:1px solid #aaaaaa">
 
 
