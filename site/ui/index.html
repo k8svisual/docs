@@ -12,7 +12,7 @@
         <link rel="prev" href="../snapshot/">
       
       
-        <link rel="next" href="../overview/">
+        <link rel="next" href="../cluster/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -302,6 +302,8 @@
       
         
       
+        
+      
     
     
     
@@ -314,7 +316,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -341,31 +345,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cluster
+    -Cluster
   </span>
   
 
@@ -385,27 +369,7 @@
         
   
   <span class="md-ellipsis">
-    Workload Schematics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../graphicview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Graphic View
+    -Workload Schematics
   </span>
   
 
@@ -425,7 +389,7 @@
         
   
   <span class="md-ellipsis">
-    Storage
+    -Storage
   </span>
   
 
@@ -445,27 +409,7 @@
         
   
   <span class="md-ellipsis">
-    Security
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../search/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Search
+    -Security
   </span>
   
 
@@ -485,7 +429,87 @@
         
   
   <span class="md-ellipsis">
-    OwnerRef Links
+    -OwnerRef Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eventmsgs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Event Msgs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphicview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Graphic View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../containerimages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Container Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Search
   </span>
   
 
@@ -498,6 +522,25 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../helpCloseConfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HELP / CLOSE / CONFIGURE
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -582,18 +625,6 @@
 
 <h3 id="snapshots">Snapshots</h3>
 <p>All data to be used by VpK is stored in a snapshot. The snapshot drop down field is how to get started in creating or selecting a snapshot.  For detail snapshot information refer to the "<strong>SNAPSHOTS</strong>" category in this documentation site.</p>
-<hr style="border:1px solid #aaaaaa">
-
-<h3 id="help">Help</h3>
-<p>A build-in help system is available when using VpK.  Select this option to open the help system. </p>
-<hr style="border:1px solid #aaaaaa">
-
-<h3 id="shutdown">Shutdown</h3>
-<p>VpK can be stopped by selecting the "X" button in the upper right portion of the home screen.  Press the button and confirm the shutdown by pressing the "<strong>Shutdown</strong>" button.</p>
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_confirm.png">
-</p>
-
 <hr />
 <p>Once shutdown has completed the following screen is shown.</p>
 <p align="center">
@@ -609,18 +640,44 @@
 
 <h3 id="configuration">Configuration</h3>
 <p>From the home screen click the gear in the upper right portion of the screen to open the VpK configuration.   </p>
-<p>Two item are configurable, displaying of "managedFields" and displaying of the "status" section in the resource definition when shown.</p>
-<p>Viewing of system usage information is also available from this screen.</p>
+<p>Multiple items can be configured along with viewing Usage information.  Items that are configurable are:</p>
+<ul>
+<li>
+<p>managedFields - this controls the displaying of <strong>managedFields</strong> when a K8s resource information is displayed.  Enabling this 
+option will show the managedFields.</p>
+</li>
+<li>
+<p>status - controls the displaying of the <strong>status</strong> section when a K8s resource information is displayed.  Enabling this 
+option will show the status information.</p>
+</li>
+<li>
+<p>Redact K8s Secret data - controls if the data section of a K8s Secret resource should be redacted. If enabled all items in the 
+data section will be replaced with <strong>Content has been REDACTED</strong>.  </p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If this option is modified a complete reload of the selected Snapshot must be performed. The redacting or showing of the data 
+is performed when the Snapshot is processed.</p>
+</div>
+<ul>
+<li>
+<p>Snapshot reload - controls if a full reload and re-parse of a Snapshot is performed.  If a selected Snapshot has been processed
+and is selected to be processed a second time without loading another Snapshot the default is to perform a soft load of the Snapshot 
+data.  Enabling this option will force a complete reload of the selected Snapshot.   </p>
+</li>
+<li>
+<p>View usage information - technical information regarding the server and browser are displayed.  See the Usage screen show below.</p>
+</li>
+</ul>
 <h4 id="configuration-screen">Configuration screen</h4>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config.png">
-
 </p>
 
 <h4 id="usage-information-screen">Usage information screen</h4>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/about.png">
-
 </p>
 
 <hr style="border:1px solid #aaaaaa">
@@ -671,7 +728,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>

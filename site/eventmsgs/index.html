@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../ui/">
+        <link rel="prev" href="../ownerref/">
       
       
-        <link rel="next" href="../cluster/">
+        <link rel="next" href="../graphicview/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Overview - VpK</title>
+        <title>-Event Msgs - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              -Event Msgs
             
           </span>
         </div>
@@ -296,6 +296,8 @@
       
         
       
+        
+      
     
     
     
@@ -333,41 +335,13 @@
                 
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
     <li class="md-nav__item">
       <a href="../cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cluster
+    -Cluster
   </span>
   
 
@@ -387,27 +361,7 @@
         
   
   <span class="md-ellipsis">
-    Workload Schematics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../graphicview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Graphic View
+    -Workload Schematics
   </span>
   
 
@@ -427,7 +381,7 @@
         
   
   <span class="md-ellipsis">
-    Storage
+    -Storage
   </span>
   
 
@@ -447,27 +401,7 @@
         
   
   <span class="md-ellipsis">
-    Security
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../search/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Search
+    -Security
   </span>
   
 
@@ -487,7 +421,95 @@
         
   
   <span class="md-ellipsis">
-    OwnerRef Links
+    -OwnerRef Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    -Event Msgs
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphicview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Graphic View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../containerimages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Container Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Search
   </span>
   
 
@@ -500,6 +522,25 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../helpCloseConfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HELP / CLOSE / CONFIGURE
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -554,14 +595,14 @@
                   
 
 
-  <h1>Overview</h1>
+  <h1>-Event Msgs</h1>
 
-<p>The Overview tab provides example screen views of the addtional tabs for VpK. These
-screen views are scrolled horizontally across the screen. </p>
-<hr />
-<h3 id="overview-tab">Overview tab</h3>
+<p>OwnerRef Links provides a view of the owner reference chain for resources in the selected namespace.  </p>
+<p>From the namespace drop-down select a single namespace.  Once a namespace has been selected press the "<strong>View selected namespace</strong>" button. </p>
+<p>If there is no selected namespace a warning message is displayed. </p>
+<p>The results are a graph of the relationships with the Owner at the highest level in the graph.  Click on any of the displayed color rectangles and the associated resource definition will be displayed.</p>
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
@@ -608,7 +649,7 @@ screen views are scrolled horizontally across the screen. </p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
