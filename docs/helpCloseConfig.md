@@ -3,12 +3,12 @@
 In the upper right-hand corner of the UI there are three icons that provide:
 
 - Help - context based help
-- Close - close and shutdown VpK
+- Close - shutdown and close VpK
 - Configure - configure options for VpK
 
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/helpCloseConfig.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/help-close-config.png" width="140">
 </p>
 
 
@@ -35,8 +35,22 @@ VpK can be stopped by selecting the "X" button in the upper right portion of the
 </p>
 
 
+!!! Info
+
+    If VpK is running in a Docker container the container will be stopped at this time.
 
 
+Once the shutdown and close process has completed the following screen is displayed.
+
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_complete.png">
+</p>
+
+
+<hr style="border:1px solid #aaaaaa">
+
+### Config
 
 From the home screen click the gear in the upper right portion of the screen to open the VpK configuration.   
 

@@ -6,6 +6,7 @@ nav:
   - INSTALLING: installing.md
   - SNAPSHOTS: snapshot.md
   - USER INTERFACE: ui.md
+  - HELP / CLOSE / CONFIG: helpCloseConfig.md
   - UI TABS:
       - -Cluster: cluster.md
       - -Workload Schematics: schematics.md
@@ -16,7 +17,6 @@ nav:
       - -Graphic View: graphicview.md
       - -Container Images: containerimages.md
       - -Search: search.md
-  - HELP / CLOSE / CONFIGURE: helpCloseConfig.md
 
   - FAQ: faq.md
 

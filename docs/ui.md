@@ -40,60 +40,7 @@ All data to be used by VpK is stored in a snapshot. The snapshot drop down field
 
 ---
 
-Once shutdown has completed the following screen is shown.
 
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_complete.png">
-</p>
-
---- 
-
-
-!!! Info
-
-    If VpK is running in a Docker container the container will stop at this time
-
-
-<hr style="border:1px solid #aaaaaa">
-
-### Configuration
-
-From the home screen click the gear in the upper right portion of the screen to open the VpK configuration.   
-
-Multiple items can be configured along with viewing Usage information.  Items that are configurable are:
-
-- managedFields - this controls the displaying of __managedFields__ when a K8s resource information is displayed.  Enabling this 
-option will show the managedFields.
-
-- status - controls the displaying of the __status__ section when a K8s resource information is displayed.  Enabling this 
-option will show the status information.
-
-- Redact K8s Secret data - controls if the data section of a K8s Secret resource should be redacted. If enabled all items in the 
-data section will be replaced with __Content has been REDACTED__.  
-
-!!! Warning
-
-    If this option is modified a complete reload of the selected Snapshot must be performed. The redacting or showing of the data 
-    is performed when the Snapshot is processed.
-
-- Snapshot reload - controls if a full reload and re-parse of a Snapshot is performed.  If a selected Snapshot has been processed
-and is selected to be processed a second time without loading another Snapshot the default is to perform a soft load of the Snapshot 
-data.  Enabling this option will force a complete reload of the selected Snapshot.   
-
-- View usage information - technical information regarding the server and browser are displayed.  See the Usage screen show below.
-
-#### Configuration screen
-
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config.png">
-</p>
-
-
-#### Usage information screen
-
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/about.png">
-</p>
 
 <hr style="border:1px solid #aaaaaa">
 
