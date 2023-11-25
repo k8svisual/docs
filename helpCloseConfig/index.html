@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../search/">
+        <link rel="prev" href="../ui/">
       
       
-        <link rel="next" href="../faq/">
+        <link rel="next" href="../cluster/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>HELP / CLOSE / CONFIGURE - VpK</title>
+        <title>HELP / CLOSE / CONFIG - VpK</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HELP / CLOSE / CONFIGURE
+              HELP / CLOSE / CONFIG
             
           </span>
         </div>
@@ -274,6 +274,33 @@
       
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    HELP / CLOSE / CONFIG
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
     
     
@@ -310,10 +337,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -324,8 +351,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             UI TABS
           </label>
@@ -522,33 +549,6 @@
       
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    HELP / CLOSE / CONFIGURE
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
   
     <li class="md-nav__item">
       <a href="../faq/" class="md-nav__link">
@@ -595,16 +595,16 @@
                   
 
 
-  <h1>HELP / CLOSE / CONFIGURE</h1>
+  <h1>HELP / CLOSE / CONFIG</h1>
 
 <p>In the upper right-hand corner of the UI there are three icons that provide:</p>
 <ul>
 <li>Help - context based help</li>
-<li>Close - close and shutdown VpK</li>
+<li>Close - shutdown and close VpK</li>
 <li>Configure - configure options for VpK</li>
 </ul>
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/help-close-config.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/help-close-config.png" width="140">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
@@ -622,6 +622,18 @@ pressed the help Table of Contents is opened.  </p>
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_confirm.png">
 </p>
 
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If VpK is running in a Docker container the container will be stopped at this time.</p>
+</div>
+<p>Once the shutdown and close process has completed the following screen is displayed.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_shutdown_complete.png">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="config">Config</h3>
 <p>From the home screen click the gear in the upper right portion of the screen to open the VpK configuration.   </p>
 <p>Multiple items can be configured along with viewing Usage information.  Items that are configurable are:</p>
 <ul>
