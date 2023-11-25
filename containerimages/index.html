@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../search/">
+        <link rel="prev" href="../graphicview/">
       
+      
+        <link rel="next" href="../search/">
       
       
       <link rel="icon" href="../images/allLogo.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>FAQ - VpK</title>
+        <title>-Container Images - VpK</title>
       
     
     
@@ -101,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FAQ
+              -Container Images
             
           </span>
         </div>
@@ -272,6 +274,8 @@
       
   
   
+    
+  
   
     
     
@@ -301,14 +305,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -322,7 +324,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             UI TABS
@@ -473,9 +475,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../containerimages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -484,6 +493,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -520,16 +530,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -538,7 +541,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -574,32 +576,18 @@
                   
 
 
-  <h1>FAQ</h1>
+  <h1>-Container Images</h1>
 
-<p>The following questions and answers hopefully provide aid in understanding and working with VpK software.  </p>
-<hr style="border:1px solid grey">
+<p>Container Images provides two views, table and graph, of the container images defined within the K8s cluster.</p>
+<p>From the Select Repository drop-down select a single repository.  Once a repository has been selected press the "<strong>View selected repository</strong>" button. </p>
+<p>If there is no selected repository a warning message is displayed. </p>
+<p>The results are a table view of the container images for the selected repository.<br />
+relationships with the Owner at the highest level in the graph.  Click on any of the displayed color rectangles and the associated resource definition will be displayed.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref.png">
+</p>
 
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Is the kubectl CLI required or can another command CLI be used to connect to the Kubernetes cluste?</p>
-</div>
-<details class="answer">
-<summary>Answer</summary>
-<p>The default CLI is kubectl is not required.  For example when using Red Hat(r) OpenShift(r) the "<strong>oc</strong>" command CLI is used.
-If the default command CLI is not used the optional command CLI must be connected to the target k8s cluster before VpK can 
-query and retrieve resource data.  The optional command CLI must also be provide in the UI when quering to the cluster.</p>
-</details>
-<hr style="border:1px solid grey">
-
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Can I modify the displayed resource information?</p>
-</div>
-<details class="answer">
-<summary>Answer</summary>
-<p>VpK is read-only and does not modify the k8s cluster.   </p>
-</details>
-<hr style="border:1px solid grey">
+<hr style="border:1px solid #aaaaaa">
 
 
 
