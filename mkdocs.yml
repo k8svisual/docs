@@ -7,14 +7,16 @@ nav:
   - SNAPSHOTS: snapshot.md
   - USER INTERFACE: ui.md
   - UI TABS:
-      - Overview: overview.md
-      - Cluster: cluster.md
-      - Workload Schematics: schematics.md
-      - Graphic View: graphicview.md
-      - Storage: storage.md
-      - Security: security.md
-      - Search: search.md
-      - OwnerRef Links: ownerref.md
+      - -Cluster: cluster.md
+      - -Workload Schematics: schematics.md
+      - -Storage: storage.md
+      - -Security: security.md
+      - -OwnerRef Links: ownerref.md
+      - -Event Msgs: eventmsgs.md
+      - -Graphic View: graphicview.md
+      - -Container Images: containerimages.md
+      - -Search: search.md
+
   - FAQ: faq.md
 
 theme:
@@ -30,7 +32,7 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.indexes
     # - navigation.instant
     # - navigation.prune
