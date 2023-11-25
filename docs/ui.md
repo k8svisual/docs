@@ -28,7 +28,7 @@ When the application is started a splash screen is shown.
 The top of the screen provides the ability to create or select a snapshot, open help, configuration, and shutdown the application.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_top.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_top2.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
