@@ -15,7 +15,8 @@ Interaction with the user interface provides the ability to drill down to obtain
 
 ### Splash screen
 
-When the application is started a splash screen is shown.
+When the application is started a splash screen is shown.  This modal is shown for approximately three seconds and then closed.
+If the refresh option for the browser is selected the splash screen will be redisplayed. 
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_startup.png">
@@ -25,7 +26,7 @@ When the application is started a splash screen is shown.
 
 ### Top section of screen
 
-The top of the screen provides the ability to create or select a snapshot, open help, configuration, and shutdown the application.
+The top of the screen provides the ability to create or select a snapshot, open help, configuration, and shutdown/close the application.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_top2.png">
@@ -38,15 +39,36 @@ The top of the screen provides the ability to create or select a snapshot, open 
 All data to be used by VpK is stored in a snapshot. The snapshot drop down field is how to get started in creating or selecting a snapshot.  For detail snapshot information refer to the "__SNAPSHOTS__" category in this documentation site.
 
 
----
-
-
-
 <hr style="border:1px solid #aaaaaa">
 
 ### Tabs
 
-Information for each of the tabs is included in the "__UI TABS__" category of this documentation.  Each tab is listed along with descriptions and instructions on usage.
+Information for each of the tabs is included in the "__UI TABS__" category of this documentation.  Each tab is listed along with descriptions and instructions on usage.   
 
+If any tab is selected and no Snapshot has been selected a warning message is display.  
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_no-data.png">
+</p>
+
+
+<hr style="border:1px solid #aaaaaa">
+
+### Server console
+
+When VpK is started the server portion will display a startup banner and be followed with log messages.
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/splash_vpk.png">
+</p>
+
+
+Log messages provide information regarding VpK processing of the selected Snaphsot.  Summary statistics for selected items
+are displayed when a Snapshot has been processed.
+
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/splash_log.png">
+</p>
 
 <hr style="border:1px solid #aaaaaa">
