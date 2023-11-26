@@ -45,10 +45,20 @@ All data to be used by VpK is stored in a snapshot. The snapshot drop down field
 
 Information for each of the tabs is included in the "__UI TABS__" category of this documentation.  Each tab is listed along with descriptions and instructions on usage.   
 
+A summary of the tabs follows;
+
+- Cluster - This is a high-level 3D view of the cluster. The view is interactive and can be rotated, tilted, zoomed in or out, and filtered.
+- Workload Schematics - This is a schematic view of a deployed Pod and the associated resources. 
+- Storage - Storage provides a view of the defined StorageClasses, Persistent Volumes, and Persistent Volume Claims along with the amount of space requested for each. The lower portion of the screen provides statistics for defined storage for a selected Volume Type, Node, or Namespace.
+- Security - Security provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.
+- OwnerRef - OwnerRef Links provides a view of the owner reference chain for resources in the selected namespace.
+- Event Msgs - A table view of all Event messages. 
+- Container Images - 
+
 If any tab is selected and no Snapshot has been selected a warning message is display.  
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_no-data.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_no_data.png">
 </p>
 
 
@@ -59,7 +69,7 @@ If any tab is selected and no Snapshot has been selected a warning message is di
 When VpK is started the server portion will display a startup banner and be followed with log messages.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/splash_vpk.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/splash_vpk_2.png">
 </p>
 
 

@@ -10,7 +10,15 @@ relationships with the Owner at the highest level in the graph.  Click on any of
 
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_container_images_table.png">
+</p>
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_container_images_graph.png">
+</p>
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_container_images_legend.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

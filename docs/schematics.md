@@ -1,5 +1,6 @@
 
 
+This is a schematic view of a deployed Pod and the associated resources.
 
 From the namespace drop-down select one or more namespaces.  Once namespace(s) have been selected press the __View Schematic(s)__ button. 
 
