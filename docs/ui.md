@@ -52,7 +52,7 @@ A summary of the tabs follows;
 - Storage - Storage provides a view of the defined StorageClasses, Persistent Volumes, and Persistent Volume Claims along with the amount of space requested for each. The lower portion of the screen provides statistics for defined storage for a selected Volume Type, Node, or Namespace.
 - Security - Security provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.
 - OwnerRef - OwnerRef Links provides a view of the owner reference chain for resources in the selected namespace.
-- Event Msgs - A table view of all Event messages. 
+- Event Msgs - A table view of all Event messages that were available in the K8s cluster when the Snapshot was created. 
 - Container Images - Container Images provides two views, table and graph, of the container images defined within the K8s cluster by Repository.
 - Search - Search provides the ability to search all K8s resources in the selected snapshot.
 

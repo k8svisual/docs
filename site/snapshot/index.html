@@ -600,22 +600,22 @@
 <p>Viewing any information within VpK requires the user to connect to a snapshot of Kubernetes information.  </p>
 <p>Three methods exist to create a VpK Snapshot.  These are:</p>
 <ul>
-<li>From a local install connect to a running k8s cluster</li>
-<li>From a Docker container install ssh to host machine and connect to a running k8s cluster</li>
-<li>Use stand alone program 'Snapshot' to connect to a running k8s cluster</li>
+<li>From a local install connect to a running K8s cluster</li>
+<li>From a Docker container install ssh to host machine and connect to a running K8s cluster</li>
+<li>Use stand alone program 'Snapshot' to connect to a running K8s cluster</li>
 </ul>
-<p><strong>NOTE:</strong> All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) as VpK will issue the kubectl command (or other command) with the needed parameters to connect to the k8s cluster. </p>
+<p><strong>NOTE:</strong> All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) as VpK will issue the kubectl command (or other command) with the needed parameters to connect to the K8s cluster. </p>
 <hr />
 <h3 id="local-machine-running-vpk">Local machine running VpK</h3>
-<p>The VpK server communicates with the kubectl command CLI to query the k8s cluster.</p>
+<p>The VpK server communicates with the kubectl command CLI to query the K8s cluster.</p>
 <p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png"></p>
 <hr />
 <h3 id="docker-container-running-vpk">Docker container running VpK</h3>
-<p>The VpK server communicates with the kubectl command CLI to query the k8s cluster from the Docker container to the local host via SSH.</p>
+<p>The VpK server communicates with the kubectl command CLI to query the K8s cluster from the Docker container to the local host via SSH.</p>
 <p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_container.png"></p>
 <hr />
 <h3 id="create-a-snapshot">Create a snapshot</h3>
-<p>A snapshot is required to view any of the k8s resources so the creation of the snapshot, or connecting to an existing snapshot, should be the first task any time the application is started.  </p>
+<p>A snapshot is required to view any of the K8s resources so the creation of the snapshot, or connecting to an existing snapshot, should be the first task any time the application is started.  </p>
 <p>At the top of the screen from drop-down box select the desired option to create or use and existing snapshot.  </p>
 <h4 id="drop-down-when-running-locally">Drop-down when running locally</h4>
 <p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_DropDown.png" width="180" height="112"></p>
@@ -642,12 +642,12 @@
 </tr>
 <tr>
 <td>kubectl or other command</td>
-<td>The command that is used to communicate with the k8s cluster.</td>
+<td>The command that is used to communicate with the K8s cluster.</td>
 <td style="text-align: center;"><strong>kubectl</strong></td>
 </tr>
 <tr>
 <td>Namespace</td>
-<td>A single namespace or the value <strong><all></strong> to limit what is obtained from the k8s cluster.</td>
+<td>A single namespace or the value <strong><all></strong> to limit what is obtained from the K8s cluster.</td>
 <td style="text-align: center;"><strong>&lt;all&gt;</strong></td>
 </tr>
 </tbody>
@@ -685,7 +685,7 @@ be shown.  These fields are used to enable the container the ability to run comm
 <p><br></p>
 <p>The dashed outlined section shown below is only shown if VpK is run from a Docker container.</p>
 <p><img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_ssh_parms.png" width="700" height="700"></p>
-<p>Once the information is provided press the "<strong>Connect</strong>" button to begin retrieving the k8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named <strong>cluster</strong> within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the "Snapshot prefix" field along with date and time appended.  </p>
+<p>Once the information is provided press the "<strong>Connect</strong>" button to begin retrieving the K8s data.  The cluster snapshot is created and stored in a local directory.  The base location for all snapshots is a directory named <strong>cluster</strong> within the same location where the software is installed.  A new snapshot directory within the base 'cluster' directory is created for each new snapshot.  The new snapshot directory will use the value provided in the "Snapshot prefix" field along with date and time appended.  </p>
 <p><br></p>
 <p>Example snapshot directory name that will be created: 
 <div class="highlight"><pre><span></span><code>vpk-2022-10-26-14h-16m-46s
