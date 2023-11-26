@@ -53,7 +53,8 @@ A summary of the tabs follows;
 - Security - Security provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.
 - OwnerRef - OwnerRef Links provides a view of the owner reference chain for resources in the selected namespace.
 - Event Msgs - A table view of all Event messages. 
-- Container Images - 
+- Container Images - Container Images provides two views, table and graph, of the container images defined within the K8s cluster by Repository.
+- Search - Search provides the ability to search all K8s resources in the selected snapshot.
 
 If any tab is selected and no Snapshot has been selected a warning message is display.  
 

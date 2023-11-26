@@ -1,5 +1,5 @@
 
-Search provides the ability to search all k8s resources in the selected snapshot.  
+Search provides the ability to search all K8s resources in the selected snapshot.  
 
 The Search value input field can be used standalone or in conjunction with the Namespace(s) and/or 
 Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.
