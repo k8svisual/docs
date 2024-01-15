@@ -1,37 +1,37 @@
 
 
-Security provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.  
+Network provides two views of the related network IPs and components. 
 
-From the namespace drop-down select a single namespace.  Once a namespace has been selected press the "__View selected namespace__" button. If there is no selected namespace a warning message is displayed.  
+### Node & Pod IPs
 
-The use of a dashed bounding line is used to group the objects in the selected namespace. Objects outside the dashed bounding line are considered cluster level resources.
-
-Click on any of the displayed objects and the associated resource definition will be displayed.
+The default view when opening the tab is the Node & PodIPs.  This view provides the node IP along with the Pod IP ranges
+that are in use within the associated Pods.he associated resource definition will be displayed.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes.png">
 </p>
 
-### Security filter
-
-If several binding results will be shown a dialog is shown that allows the filtering of the results to be shown.  Select one or more for the drop-down
-and press the "__Filter bindings__" button to view.  Press the __Close__ button to cancel viewing any results.
-
-The results are a graph of the security bindings.  Subjects are shown as a rectangle at the top, bindings are shown as an ellipse in the middle, and 
-roles shown as a six-sided object at the bottom of the graph.  Below the Role is a list of the defined rules associated with the Role.
-
-
+Click the node icon to view node related information.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_filter.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes_detail2.png">
 </p>
 
-### Security legend
 
-The __Legend__ button can be pressed to view example shapes and colors for the display.
+Click the Pod IP ranges to view each Pod and associated IPs.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_filter.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes_detail.png">
+</p>
+
+
+### Services to Pods
+
+The second view is the Services to Pods view.  This is a view of the Service to the associated Node and Pods.  Click any of the 
+icons to view the related resource definition.
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_services.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

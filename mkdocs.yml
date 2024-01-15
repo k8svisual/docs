@@ -11,10 +11,11 @@ nav:
       - -Cluster: cluster.md
       - -Workload Schematics: schematics.md
       - -Storage: storage.md
+      - -Network: network.md
       - -Security: security.md
       - -OwnerRef Links: ownerref.md
       - -Event Msgs: eventmsgs.md
-      - -Graphic View: graphicview.md
+      - -Stats: statsview.md
       - -Container Images: containerimages.md
       - -Search: search.md
 
