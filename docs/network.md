@@ -18,7 +18,8 @@ Click the node icon to view node related information.
 </p>
 
 
-Click the Pod IP ranges to view each Pod and associated IPs.
+Click the Pod IP ranges to view each Pod and associated IPs.  Once displayed select any of the rows to view the 
+associated resource definition.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes_detail.png">

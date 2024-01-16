@@ -8,7 +8,7 @@ Three methods exist to create a VpK Snapshot.  These are:
 - From a Docker container install ssh to host machine and connect to a running K8s cluster
 - Use stand alone program 'Snapshot' to connect to a running K8s cluster
 
-__NOTE:__ All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) as VpK will issue the kubectl command (or other command) with the needed parameters to connect to the K8s cluster. 
+__NOTE:__ All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) prior to using VpK.  VpK will issue the kubectl command (or other command) with the needed parameters to connect to the K8s cluster and obtain the data to create the snapshot. 
 
 ---
 

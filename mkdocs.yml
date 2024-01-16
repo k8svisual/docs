@@ -72,4 +72,4 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
-copyright: Copyright &copy; 2023 k8svisual
+copyright: Copyright &copy; 2023 Dave Weilert

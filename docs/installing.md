@@ -1,31 +1,36 @@
 
-### Install and run VpK locally
-
 Vpk is an application that can run locally on your computer as a node.js application or run inside a Docker container.  
 
-The prerequiste software:
+The VpK software source code is available from the following GitHub repository:  
+
+__https://github.com/k8svisual/vpk.git__  
+
+The VpK software docker image is available from the following dockerhub.
+
+__https://hub.docker.com/k8svisual/u/k8svisual__ 
+
+
+
+The prerequiste software to run locally:
 
 - browser - must support html 5 for the user interface 
 - node.js and npm - install node packages and run the VpK server component 
 - kubectl - Kubernetes command line tool or other CLI used to communicate with a K8s cluster 
 
-Optional software:
-- Docker desktop
+The prerequiste software to run in a Docker conatiner:
+- Docker desktop or equivilent software.
 
 
-VpK software is available from the following GitHub repository:  
+### Install and run VpK locally
 
-__https://github.com/k8svisual/vpk.git__   
 
-Clone the repository or download the zip.  If using zip file, unzip file into a directory.  Change to the directory where the software is located and install the required node.js packages using the following command: 
+Clone the source code repository or download the zip.  If using zip file, unzip file into a directory.  Change to the directory where the software is located and install the required node.js packages using the following command: 
 
 ```
 npm install
 ```
 
 Local installation of VpK is completed at this point.
-
-
 
 
 ### Running VpK locally
@@ -54,11 +59,8 @@ replace the 'localhost' with the server address.
 
 ---
 
-### Install and run VpK from a container
-	
-VpK is available as a Docker container image on the dockerhub web site: 
 
-__https://hub.docker.com/repository/docker/k8svisual/viewk8s/general__
+### Install and run VpK from a container
 
 To install VpK using a Docker image use the following command:
 
