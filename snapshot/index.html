@@ -626,7 +626,7 @@
 <li>From a Docker container install ssh to host machine and connect to a running K8s cluster</li>
 <li>Use stand alone program 'Snapshot' to connect to a running K8s cluster</li>
 </ul>
-<p><strong>NOTE:</strong> All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) as VpK will issue the kubectl command (or other command) with the needed parameters to connect to the K8s cluster. </p>
+<p><strong>NOTE:</strong> All three above options require the user to have connected to a running cluster with the kubectl CLI (or other CLI tool) prior to using VpK.  VpK will issue the kubectl command (or other command) with the needed parameters to connect to the K8s cluster and obtain the data to create the snapshot. </p>
 <hr />
 <h3 id="local-machine-running-vpk">Local machine running VpK</h3>
 <p>The VpK server communicates with the kubectl command CLI to query the K8s cluster.</p>
@@ -757,7 +757,7 @@ be shown.  These fields are used to enable the container the ability to run comm
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2023 k8svisual
+      Copyright &copy; 2023 Dave Weilert
     </div>
   
   
