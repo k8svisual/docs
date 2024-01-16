@@ -8,7 +8,7 @@ In the upper right-hand corner of the UI there are three icons that provide:
 
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/help-close-config.png" width="140">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/help_close_config.png" width="140">
 </p>
 
 
@@ -16,9 +16,7 @@ In the upper right-hand corner of the UI there are three icons that provide:
 
 ### Help
 
-A build-in help system is available when using VpK.  Select this option to open the help system. When selected the help system will
-present information related to the currently selected tab.  If the VpK icon in the upper left-hand corner of the home screen is 
-pressed the help Table of Contents is opened.  
+A build-in help system is available when using VpK.  Select this option to open the help system. When selected the help system will present information related to the currently selected tab.  If the VpK icon in the upper left-hand corner of the home screen is pressed the help Table of Contents is opened.  
 
 Previous, Table of Contents, and Next options are available on all help screens.
 
@@ -78,12 +76,49 @@ data.  Enabling this option will force a complete reload of the selected Snapsho
 
 #### Configuration screen
 
+Several configuration options are available in this portion of VpK.  The configuration options aid in the ability to
+control what is displayed when the k8s resource is viewed, the background for the k8s resource view and the 3D cluster view, 
+redacting information for k8s secret resources, how data is refreshed, saving the changes, and viewing of VpK resources for the server and browser components.  The following screen is what is shown when the Config option is selected.  The Config option can only be closed by pressing the __Close__ button.
+
+
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config.png">
 </p>
 
+If changes have been made in the configuration and the close button is pressed prior to saving the chaged data the user
+is prompted to confirm the desire to not save the changes.  The following message is displayed:
 
-#### Usage information screen
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config_action.png">
+</p>
+
+If the 'Save configuration' button is pressed the following will be shown once the information is saved.
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config_confirm.png">
+</p>
+
+
+#### Resource viewing themes
+
+Two themes are available for viewing the k8s resource source and status information.  These are the light and dark.  Examples
+for each follow:
+
+#### Light theme
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/resource_light.png">
+</p>
+
+#### Dark theme
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/resource_dark.png">
+</p>
+
+#### VpK component usage information
+
+Press the blue circle with an 'i" located in the bottom portion of screen to view the VpK usage information.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/about.png">

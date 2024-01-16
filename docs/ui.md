@@ -29,7 +29,7 @@ If the refresh option for the browser is selected the splash screen will be redi
 The top of the screen provides the ability to create or select a snapshot, open help, configuration, and shutdown/close the application.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_top2.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/ui_top.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
