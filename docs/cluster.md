@@ -20,6 +20,7 @@ As k8s resource items are selected in the 3D view the properties slide-out will 
 Several of the properties provide the ability to drill down and view detail in the associated tab with the context for the 
 tab set to match the property.  Examples of the drill downs are shown below.
 
+
 #### Pod drill down
 
 This property supports viewing the associated Schecmatic and OwnerRef tabs
@@ -28,6 +29,8 @@ This property supports viewing the associated Schecmatic and OwnerRef tabs
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down1.png">
 </p>
 
+---
+
 #### StorageClass drill down
 
 This property supports viewing the associated Storage tab
@@ -35,6 +38,8 @@ This property supports viewing the associated Storage tab
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down3.png">
 </p>
+
+--- 
 
 #### API category drill down
 
@@ -45,6 +50,7 @@ This property supports viewing the associated Search tab
 </p>
 
 
+<hr style="border:1px solid #aaaaaa">
 
 ### Cluster Timelapse
 
