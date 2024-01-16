@@ -107,24 +107,7 @@ Once returned to the home screen of VpK the selected snapshot is shown in the up
 
 <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_Name.png" width="500" height="54">
 
-The snapshot name shown is also a button that can be pressed to view statistics.  Statistics for the connected snapshot are provided with a count for each resource kind within the cluster or count of resource kinds within a namespace.  
-
-
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsKind.png" width="700" height="182">
-
-<br>
-
-<img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/snapshot_StatsNS.png" width="700" height="268">
-
-<br><br>
-
-### Stand alone program Snapshot
-
-Information for using the standalone program to create the VpK snapshot is available in the 'snapshot' repository:
-
-```
-http://github.com/k8svisual/snapshot.git/ 
-```
+The snapshot name shown is also a button that can be pressed to view statistics.  Statistics for the connected snapshot are provided in either a tree map graph or in a table view with a count for each resource kind within the cluster or count of resource kinds within a namespace.  Refer to the __Stats__ tab for more information.
 
 <hr style="border:1px solid #aaaaaa">
 
