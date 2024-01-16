@@ -622,15 +622,56 @@
 <p>This is a high-level 3D view of the cluster.  The view is interactive and can be rotated, tilted, zoomed in or out, and filtered.  </p>
 <p>The left-hand side of the screen has a slide out that enables filtering the 3D view, control sound, and save the current filter settings as the default.</p>
 <p>The right-hand side of the screen has a slide out that provides <strong>Properties</strong> for any item in the 3D view that is clicked/selected.  Once an item is selected the item will have a red circle plane shown to identify the selected item.</p>
-<p>If a Pod is selected the Properties slide out will have a <strong>View pod schematic</strong> button.  If pressed a <strong>new</strong> child browser window is opened with the associated pod schematic.</p>
-<p>The <strong>Legend</strong> button provides information related to the displayed icons and planes.  </p>
 <h3 id="cluster-tab">Cluster tab</h3>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster.png">
 </p>
 
 <hr />
+<h3 id="properties-drill-down">Properties drill down</h3>
+<p>As k8s resource items are selected in the 3D view the properties slide-out will change based on the selected k8s resource.
+Several of the properties provide the ability to drill down and view detail in the associated tab with the context for the 
+tab set to match the property.  Examples of the drill downs are shown below.</p>
+<h4 id="pod-drill-down">Pod drill down</h4>
+<p>This property supports viewing the associated Schecmatic and OwnerRef tabs</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down1.png">
+</p>
+
+<h4 id="storageclass-drill-down">StorageClass drill down</h4>
+<p>This property supports viewing the associated Storage tab</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down3.png">
+</p>
+
+<h4 id="api-category-drill-down">API category drill down</h4>
+<p>This property supports viewing the associated Search tab</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down4.png">
+</p>
+
+<h3 id="cluster-timelapse">Cluster Timelapse</h3>
+<p>In the upper portion of this tab is a button labeled <strong>Timelapse</strong>.  When clicked this button will clear the 3D view and open the timelapse controls. This feature will display changes to the cluster in time sequence as they occur via intervals. The duration of each interval is dynamic.  The shortes duration is one second and the longest duration is based on the amount of time between the next change to the cluster.</p>
+<p>The timelapse will automatically display all collected changes for the cluster or can be manually stepped forward or backward 
+for each interval.  </p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse.png">
+</p>
+
+<p>The controls are as follows. </p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_controls.png">
+</p>
+
+<p>Once the auto play button is pressed the triangle button with switch to a 'pause' button.<br />
+Press that at any time to stop the auto play.  Once paused the detail for the currently displayed time interval can be 
+viewed by pressing the blue circle with an 'i'.  This will display all changes in the interval in a tabular form.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_detail.png">
+</p>
+
 <h3 id="cluster-legend">Cluster Legend</h3>
+<p>The blue circle button with and 'i' provides information related to the displayed icons and planes.  </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_legend.png">
 </p>
