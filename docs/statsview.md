@@ -16,6 +16,8 @@ namespace.
 Mouse over any rectangle to view summary information.  Click any rectangle to view the associated data in the
 Search tab.  If the Namespace view is toggled the Search will also filter for the associated namespace.
 
+Use the button labeled __Toggle view for Kind / Namespace__ to toggle the view.
+
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_stats_treeMap.png">
 </p>
@@ -28,6 +30,10 @@ The report view is a tabular view of the data with collapsible sections.  Click 
 toggle the collapsed sections.
 
 Click any of the lines of the report to view the associated data in the Search tab.
+
+Filtering for the Report view only supports providing a minimum count and maximum count.
+
+Use the button labeled __Toggle view for Kind / Namespace__ to toggle the view.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_stats_reportView.png">
