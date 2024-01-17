@@ -619,25 +619,27 @@
 
   <h1>-Security</h1>
 
-<p>Security provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.  </p>
+<p>Security tab provides a view of the defined role, subject, and bindings for resources in the cluster level or selected namespace.  </p>
 <p>From the namespace drop-down select a single namespace.  Once a namespace has been selected press the "<strong>View selected namespace</strong>" button. If there is no selected namespace a warning message is displayed.  </p>
 <p>The use of a dashed bounding line is used to group the objects in the selected namespace. Objects outside the dashed bounding line are considered cluster level resources.</p>
 <p>Click on any of the displayed objects and the associated resource definition will be displayed.</p>
 <h4 id="security-view-with-namespace-items">Security view with Namespace items</h4>
+<p>The following image shows the namespace ‘services’ and the resources defined at the namespace level.  Notice the dashed border around the resources in the namespace.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security.png">
 </p>
 
 <h4 id="security-view-with-cluster-level-items">Security view with Cluster level items</h4>
+<p>The following image shows the cluster level defined resources for the selected namespace.  </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security2.png">
 </p>
 
 <h3 id="security-filter">Security filter</h3>
-<p>If several binding results will be shown a dialog is shown that allows the filtering of the results to be shown.  Select one or more for the drop-down
-and press the "<strong>Filter bindings</strong>" button to view.  Press the <strong>Close</strong> button to cancel viewing any results.</p>
-<p>The results are a graph of the security bindings.  Subjects are shown as a rectangle at the top, bindings are shown as an ellipse in the middle, and 
-roles shown as a six-sided object at the bottom of the graph.  Below the Role is a list of the defined rules associated with the Role.</p>
+<p>Once a namespace has been selected filtering provides ability to reduce or modify what is shown.  Select the desired resource type filter.  Once selected press the "<strong>Populate resource names information</strong> button.  This will populate the selection table.  </p>
+<p>From the selection table choose one or more resources to be displayed. Once selected press the button labeled <strong>Apply filter</strong>.  This will also close the filter screen.</p>
+<p>The results are a graph of the security bindings.  </p>
+<p>Subjects are shown as a rectangle at the top, Bindings are shown as an ellipse in the middle, and Roles shown as a six-sided object at the bottom of the graph.  Below the Role is a list of the defined rules associated with the Role.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_legend.png">
 </p>

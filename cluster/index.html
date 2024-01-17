@@ -619,65 +619,74 @@
 
   <h1>-Cluster</h1>
 
-<p>This is a high-level 3D view of the cluster.  The view is interactive and can be rotated, tilted, zoomed in or out, and filtered.  </p>
+<p>Cluster tab provides a high-level 3D view of the cluster.  The 3D view is interactive and can be rotated, tilted, zoomed in or out, and filtered.  </p>
 <p>The left-hand side of the screen has a slide out that enables filtering the 3D view, control sound, and save the current filter settings as the default.</p>
-<p>The right-hand side of the screen has a slide out that provides <strong>Properties</strong> for any item in the 3D view that is clicked/selected.  Once an item is selected the item will have a red circle plane shown to identify the selected item.</p>
-<h3 id="cluster-tab">Cluster tab</h3>
+<p>The right-hand side of the screen has a slide out that provides <strong>Properties</strong> for any item in the 3D view that is clicked/selected.  Once an item is selected it is high-lighted with a red circle plane shown. There is a maximum of only one red circle shown at any time. </p>
+<p>Along with the interactive 3D view this tab also provides a <strong>timelapse</strong> of the 3D view as changes occur in the cluster.</p>
+<h3 id="cluster-3d-view">Cluster 3D view</h3>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster.png">
 </p>
 
 <hr />
-<h3 id="properties-drill-down">Properties drill down</h3>
-<p>As k8s resource items are selected in the 3D view the properties slide-out will change based on the selected k8s resource.
-Several of the properties provide the ability to drill down and view detail in the associated tab with the context for the 
-tab set to match the property.  Examples of the drill downs are shown below.</p>
-<h4 id="pod-drill-down">Pod drill down</h4>
-<p>This property supports viewing the associated Schecmatic and OwnerRef tabs</p>
+<h3 id="resource-properties">Resource properties</h3>
+<p>As k8s resource items are selected in the 3D view the properties slide-out will change based on the selected k8s resource.<br />
+Several of the resource properties provide the ability to drill down and view detail in the related tab with the context for the 
+tab set to match the selected resource.  </p>
+<p>Examples of the resource property drill downs are shown below.</p>
+<h4 id="pod-drill-down">Pod - drill down</h4>
+<p>This property supports viewing the Schematic and OwnerRef tabs for the selected Pod. Click on either of the buttons to drill down and view the associated information.  Once the tab is opened a button is shown in the tab to return to this tab.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down1.png">
 </p>
 
 <hr />
-<h4 id="storageclass-drill-down">StorageClass drill down</h4>
-<p>This property supports viewing the associated Storage tab</p>
+<h4 id="storageclass-drill-down">StorageClass - drill down</h4>
+<p>This property supports viewing the Storage tab for the selected StorageClass. Click on the button to drill down and view the associated information.  Once the tab is opened a button is shown in the tab to return to this tab.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down3.png">
 </p>
 
 <hr />
-<h4 id="api-category-drill-down">API category drill down</h4>
-<p>This property supports viewing the associated Search tab</p>
+<h4 id="api-category-drill-down">API category - drill down</h4>
+<p>This property supports viewing the Search tab for the selected API category. Click on the button to drill down and view the associated information.  The Search tab is populated with the parameters and the results of searching for the selected API category. Once the tab is opened a button is shown in the tab to return to this tab.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_drill_down4.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
 
-<h3 id="cluster-timelapse">Cluster Timelapse</h3>
-<p>In the upper portion of this tab is a button labeled <strong>Timelapse</strong>.  When clicked this button will clear the 3D view and open the timelapse controls. This feature will display changes to the cluster in time sequence as they occur via intervals. The duration of each interval is dynamic.  The shortes duration is one second and the longest duration is based on the amount of time between the next change to the cluster.</p>
-<p>The timelapse will automatically display all collected changes for the cluster or can be manually stepped forward or backward 
-for each interval.  </p>
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse.png">
-</p>
-
-<p>The controls are as follows. </p>
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_controls.png">
-</p>
-
-<p>Once the auto play button is pressed the triangle button with switch to a 'pause' button.<br />
-Press that at any time to stop the auto play.  Once paused the detail for the currently displayed time interval can be 
-viewed by pressing the blue circle with an 'i'.  This will display all changes in the interval in a tabular form.</p>
-<p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_detail.png">
-</p>
-
 <h3 id="cluster-legend">Cluster Legend</h3>
 <p>The blue circle button with and 'i' provides information related to the displayed icons and planes.  </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_legend.png">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
+<h3 id="cluster-timelapse">Cluster Timelapse</h3>
+<p>In the upper portion of this tab is a button labeled <strong>Timelapse</strong>.  When clicked this button will clear the 3D view and open the timelapse controls. This feature will display changes to the cluster in time sequence as they occur via intervals. The duration of each interval is dynamic.  The shortest duration is one second and the longest duration is based on the amount of time between the next change to occur in the cluster.</p>
+<p>The timelapse will automatically display all snapshot collected changes for the cluster. The view can also be manually advanced or reversed with the use of the appropriate buttons shown in the control portion of the screen. </p>
+<h4 id="timelapse-view">Timelapse view</h4>
+<p>The initial view of the timelapse will have no resources shown, only a circle that is divided into the number of nodes in the cluster.  When started the first recorded change is shown. The next change is then shown and so on. The speed of displaying the changes is controlled by the <strong>Timelapse delay interval</strong> located in the filter slide-out for the timelapse.</p>
+<p>A difference between the Timelapse view and the default view is all <strong>Completed</strong> Pods, shown in blue, will appear for a period and be shown only while the Pod is active.  Thus, a blue Pod will appear for a short period of time and then be hidden from view.</p>
+<p>While the Timelapse is running or when paused the view can still be rotated, zoomed, etc.  Clicking on resources does not open the properties slide-out.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse.png">
+</p>
+
+<h4 id="timelapse-controls-and-filter">Timelapse controls and filter</h4>
+<p>The controls and filter are shown below.  To start the automatic timelapse view press the <strong>start</strong> button (black triangle).  The showing of changes in the cluster will start to appear. Once the start button is pressed the triangle will switch to a 'pause' button.   </p>
+<p>Press the pause button at any time to pause the auto play.  </p>
+<p>The filter slide-out provides the ability to control showing of the Network or Storage groups of resources, selection of a Namespace, and the duration of the interval.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_controls.png">
+</p>
+
+<h4 id="interval-detail">Interval detail</h4>
+<p>Once the auto display is paused the detail changes for the currently displayed time interval can be viewed by pressing the blue circle with an 'i'.  Pressing this blue circle will display all changes in the current interval in a tabular form.</p>
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_detail.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

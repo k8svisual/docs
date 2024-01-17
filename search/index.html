@@ -619,11 +619,11 @@
 
   <h1>-Search</h1>
 
-<p>Search provides the ability to search all K8s resources in the selected snapshot.  </p>
-<p>The Search value input field can be used standalone or in conjunction with the Namespace(s) and/or 
-Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.</p>
-<p>The Namespace(s) and Kind(s) searches are performed before searching with the 'Search value' input data.</p>
+<p>Search tab provides the ability to search all K8s resources in the selected snapshot.  </p>
+<p>The Search value input field can be used standalone or in conjunction with the Namespace(s) and/or Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.</p>
+<p>The Namespace(s) and Kind(s) searches are performed <strong>before</strong> searching with the 'Search value' input data.</p>
 <h3 id="search-screen">Search screen</h3>
+<p>The following Search screen shows the selection of two Kinds, ConfigMap and Secret within the selected Namespace: kube-public.  A table with the search results is shown below the entered parameters. </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_search.png">
 </p>
@@ -631,10 +631,10 @@ Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.
 <hr />
 <p>The following are the options when using the 'Search value' input field.</p>
 <h3 id="full-search">Full search</h3>
-<p>Enter any text in the 'Search value' input field. Kubernetes resource definitions will be searched for the value regardless of where the value is located.</p>
+<p>Enter any text in the 'Search value' input field. All Kubernetes resource definitions will be searched for the value regardless of where the value is located.</p>
 <h3 id="limited-searches">Limited searches</h3>
-<p>There are three types of limited searches. Each requires a specific keyword to indicate the associated search is to be performed. 
-Keywords must be entered in lowercase followed with a colon.</p>
+<p>There are three types of limited searches. Each requires a specific keyword to indicate the associated search is to be performed. </p>
+<p>Keywords must be entered in lowercase followed with a colon.</p>
 <table>
 <thead>
 <tr>

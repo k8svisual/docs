@@ -619,10 +619,9 @@
 
   <h1>-Network</h1>
 
-<p>Network provides two views of the related network IPs and components. </p>
+<p>Network tab provides two views of the related network IPs and components. </p>
 <h3 id="node-pod-ips">Node &amp; Pod IPs</h3>
-<p>The default view when opening the tab is the Node &amp; PodIPs.  This view provides the node IP along with the Pod IP ranges
-that are in use within the associated Pods.he associated resource definition will be displayed.</p>
+<p>The default view when opening the tab is the Node &amp; Pod IPs.  This view provides the node IP along with the Pod IP ranges that are in use within the associated Pods. </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes.png">
 </p>
@@ -632,17 +631,15 @@ that are in use within the associated Pods.he associated resource definition wil
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes_detail2.png">
 </p>
 
-<p>Click the Pod IP ranges to view each Pod and associated IPs.  Once displayed select any of the rows to view the 
-associated resource definition.</p>
+<p>Click the Pod IP ranges to view a tabular view of the Pod and associated IPs.  Once displayed click any of the rows to view the  associated resource definition.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_nodes_detail.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">
 
-<h3 id="services-to-pods">Services to Pods</h3>
-<p>The second view is the Services to Pods view.  This is a view of the Service to the associated Node and Pods.  Click any of the 
-icons to view the related resource definition.</p>
+<h3 id="services-to-pods">Services-To-Pods</h3>
+<p>The second view is the Services-To-Pods view.  This is a view of the Service to the associated Node and Pods.  Click any of the icons or text to view the related resource definition.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_services.png">
 </p>
@@ -650,10 +647,21 @@ icons to view the related resource definition.</p>
 <hr style="border:1px solid #aaaaaa">
 
 <h3 id="filter-view">Filter view</h3>
-<p>Each view can have a filter applied.  Press the <strong>Filter</strong> button to open the filter capability.  Once open selected the type
-of filter to be applied and then selected the associated data for the selected filter type.  Press the button labeled 
-<strong>Apply filter</strong> and the filter will be applied and the filter screen closed.</p>
-<p>The drop down for the filter type will have different options based on the view.  Node view has two filter types: Node name and Node ip.  While the Services view has five filter types: Service name, Service ip, Pod name, Pod ip, and Namespace.</p>
+<p>Each view can have a filter applied.  Press the <strong>Filter</strong> button to open the filter capability.  Once open, select the type of filter to be applied. This will populate the second drop down <strong>Filter data</strong>.  From this drop down select the associated data for the selected filter type.  Press the button labeled <strong>Apply filter</strong> and the filter will be applied and the filter screen closed.</p>
+<p>The drop down for the filter type will have different options based on the view.  </p>
+<p>The Node &amp; Pod IPs view has two filter types: </p>
+<ul>
+<li>Node name </li>
+<li>Node ip  </li>
+</ul>
+<p>The Services-To-Pod view has five filter types: </p>
+<ul>
+<li>Service name</li>
+<li>Service ip</li>
+<li>Pod name </li>
+<li>Pod ip </li>
+<li>Namespace</li>
+</ul>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_filter.png">
 </p>

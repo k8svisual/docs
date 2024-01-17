@@ -617,17 +617,18 @@
 
   <h1>INTRODUCTION</h1>
 
-<p>VpK (Visually presented Kubernetes) was created to assist in understanding and learning about Kubernetes cluster.   </p>
-<p>VpK is comprised of a server component along with a browser application component.  The server component is a node.js application that can communicate with a running instance of Kubernetes using the <strong>kubectl</strong> CLI.  The use of other CLI tools other than kubectl is supported.  </p>
-<p>VpK requires what is called a 'snapshot'.  This is a collection of files that contain information obtained from a Kubernetes cluster. For VpK to obtain the K8s resource information an existing kubectl CLI connection must be established with the target Kubernetes cluster from where data will be retrieved. </p>
-<p>The kubectl CLI connection must be established by the user outside of VpK. If no kubectl CLI connection has been established then no K8s resource data will be obtained. A series of 'kubectl get' commands are issued to obtain the cluster data.</p>
-<p>The output from the kubectl CLI is processed to create multiple files that are collectively called a <strong>snapshot</strong>.  This snapshot is saved in a directory and can be reused without connecting to the K8s cluster for future sessions.  </p>
+<p>VpK (Visually presented Kubernetes) was created to aid in understanding and learning about Kubernetes.   </p>
+<p>VpK is comprised of a server component along with a browser application component.  The server component is a node.js application that can communicate with a running instance of a Kubernetes cluster using the <strong>kubectl</strong> CLI.  The use of other CLI tools other than kubectl is supported.  </p>
+<p>VpK requires what is called a 'snapshot'.  This is a collection of files that contain information obtained from a running Kubernetes cluster. For VpK to obtain the K8s resource information an existing kubectl CLI connection must be established with the target Kubernetes cluster from where data will be retrieved. </p>
+<p>The kubectl CLI connection must be established by the user outside of VpK. If no kubectl CLI connection has been established, then no K8s resource data will be retrieved. A series of 'kubectl get' commands are issued to obtain the cluster data.</p>
+<p>The output from the kubectl CLI is processed to create files that are collectively called a <strong>snapshot</strong>.  This snapshot is saved in a directory and can be reused without connecting to the K8s cluster for future sessions.  </p>
 <p>Once a snapshot has been created VpK no longer requires any communication with the Kubernetes cluster. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>VpK is designed as read-only and will <strong>not</strong> modify a Kubernetes cluster and is <strong>not</strong> a real-time monitoring tool.  </p>
 </div>
 <h3 id="vpk-overview-diagram">VpK overview diagram</h3>
+<p>The following diagram shows the major components and the interactions and storage of the snapshot files.  Note this diagram is when VpK is running locally and not in a Docker container.  Refer to the SNAPSHOTS topic for a description of both local and Docker container runtime differences.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/overview_local.png">
 
@@ -638,23 +639,22 @@
 <h3 id="application-features">Application features</h3>
 <ul>
 <li>
-<p>VpK will access a Kubernetes cluster via an established kubectl CLI and save query results, called a <strong>snapshot</strong>, in a local directory. </p>
+<p>VpK accesses a Kubernetes cluster via an established kubectl CLI and saves query results, called a <strong>snapshot</strong>, in a local directory. </p>
 </li>
 <li>
-<p>The locally stored <strong>snapshot</strong> can be reused. This supports fully disconnected use of VpK to review the K8s resource data without connecting to the K8s cluster.</p>
+<p>The locally stored <strong>snapshot</strong> can be reused. This snapshot enables disconnected use of VpK to review the K8s resource data.  Once a snapshot is created VpK does not require connecting to the K8s cluster to view the collected data.</p>
 </li>
 <li>
 <p>A interactive 3D view of the K8s cluster.  This view supports zoom, rotate, tilt, and filtering of resources.</p>
 </li>
 <li>
-<p>Timelapse view of the 3D cluster to show the sequence of resource creation and removal.  The timelapse can be stopped
-and viewed second-by-second while interacting with the 3D view.</p>
+<p>Timelapse view of the 3D cluster to show the sequence of resource creation and removal.  The timelapse can be paused and viewed second-by-second along with interacting with the 3D view.</p>
 </li>
 <li>
-<p>Schematic views of workloads deployed in the cluster.  Interact with the schematic and view detail resource definitions.</p>
+<p>Schematic views of workloads deployed in the cluster.  Interact with the schematic and view detail resource definitions.  Mouse over items and drill down to view detail resource information.</p>
 </li>
 <li>
-<p>View storage defined for the cluster by StorageClass, PV, PVC, CSI, and node related storage.  </p>
+<p>View storage defined for the cluster by StorageClass, PV, PVC, CSI, along with node related storage.  </p>
 </li>
 <li>
 <p>View network IP addresses and address ranges for services, pods, and nodes. </p>
@@ -666,7 +666,7 @@ and viewed second-by-second while interacting with the 3D view.</p>
 <p>View Owner References chains for K8s resources defined in the cluster.</p>
 </li>
 <li>
-<p>View event messsages statistics and timeline.</p>
+<p>View event message statistics and timeline.</p>
 </li>
 <li>
 <p>View container image repositories and associated images.</p>
