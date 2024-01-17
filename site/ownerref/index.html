@@ -619,38 +619,40 @@
 
   <h1>-OwnerRef Links</h1>
 
-<p>OwnerRef Links provides a view of the owner reference chain for resources in the selected namespace.  </p>
+<p>\
+OwnerRef Links provides a view of the owner reference chain for resources in the selected namespace.  </p>
 <p>From the namespace drop-down select a single namespace.  Once a namespace has been selected press the "<strong>View selected namespace</strong>" button. </p>
 <p>If there is no selected namespace a warning message is displayed. </p>
 <p>The results are a graph of the relationships with the Owner at the highest level in the graph.  Click on any of the displayed color rectangles and the associated resource definition will be displayed.</p>
-<p>Views can be a simple two level ownership to a complex five or six level ownership across multipe resources.</p>
+<p>Views can be a simple two-level ownership to a complex five or six level ownership across multiple resources.</p>
 <h4 id="ownerref-simple-view">OwnerRef - Simple view</h4>
+<p>This is a simple view with only three two-level resources.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref.png">
 </p>
 
 <h4 id="ownerref-complex-view">OwnerRef - Complex view</h4>
+<p>This is a complex view with multiple level resources. Also shown is a single resource owning multiple resources.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref2.png">
 </p>
 
 <h3 id="filter">Filter</h3>
-<p>After selecting a Namespace and displaying the entire result the Filter screen will be populate with the resource Kinds 
-found when the initial view is shown.  </p>
-<p>Open the filter screen and select the desired kind(s) from the drop down.  Once selected press the 
-button labeled <strong>Populate resource names information</strong>.  The detail for the selected kind(s) will be shown in a table in the filter screen.</p>
-<p>Select one or more rows to be shown and then press the the button labeled <strong>Apply filter</strong>.  </p>
-<p>In the following filter screen kind <strong>ConfigMap</strong> was selected, and populated the table.  From the table four items 
-were seleted. </p>
+<p>After selecting a Namespace and displaying the entire result the Filter screen will be populated with the resource Kinds found when the initial view is shown.  </p>
+<p>Open the filter screen and select the desired kind(s) from the drop down.  Once selected press the button labeled <strong>Populate resource names information</strong>.  The detail for the selected kind(s) will be shown in a table in the filter screen.</p>
+<p>Select one or more rows to be shown and then press the button labeled <strong>Apply filter</strong>.  </p>
+<p>In the following filter screen the kind <strong>ConfigMap</strong> was selected and populated the selection table.  From the selection table four items were selected. </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref_filter.png">
 </p>
 
 <h4 id="example-results-after-applying-filter">Example results after applying filter</h4>
+<p>Selected items to be viewed when the filter was applied.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_ownerref_filter_results.png">
 </p>
 
+<hr />
 <h3 id="clear-the-filters">Clear the filters</h3>
 <p>Return to the filter screen and press the button labeled <strong>Clear all filters</strong> to reset and clear all filters.</p>
 <hr style="border:1px solid #aaaaaa">

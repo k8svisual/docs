@@ -1,20 +1,15 @@
 
-Statistics for the cluster are shown in two primary views, a tree map graph and a tabular view. For each view 
-it may be toggled to swithch between totals by k8s resource kind and k8s namespace.
+Statistics for the cluster are shown in two views, a treemap graph view and a tabular view. Each view may be toggled to switch between totals by k8s resource kind and k8s namespace.
 
 <hr style="border:1px solid #aaaaaa">
 
-###  Graph view
+### Graph view
 
-The treemap graph displays data by color rectangles. The size and color of the rectangle provides a graphic 
-view of the amount associated with that rectangle.  
+The treemap graph displays data by color rectangles. The size and color of the rectangle provides a graphic view of the count associated with that rectangle.  
 
-Since a treemap graph can become very dense and messy the ability to show or hide the labels associated with
-each rectangle is provided.  Also data can be filtered by minimum amount, maximum amount, and either kind or 
-namespace.
+Since a treemap graph can become very dense and messy the ability to show or hide the labels associated with each rectangle is provided. Also, data can be filtered by minimum amount, maximum amount, and either kind or namespace.
 
-Mouse over any rectangle to view summary information.  Click any rectangle to view the associated data in the
-Search tab.  If the Namespace view is toggled the Search will also filter for the associated namespace.
+Mouse over any rectangle to view summary information.  Click any rectangle to view the associated data in the Search tab.  If the Namespace view is toggled the Search will also filter for the associated namespace.
 
 Use the button labeled __Toggle view for Kind / Namespace__ to toggle the view.
 
@@ -24,20 +19,19 @@ Use the button labeled __Toggle view for Kind / Namespace__ to toggle the view.
 
 <hr style="border:1px solid #aaaaaa">
 
-###  Report view
+### Report view
 
-The report view is a tabular view of the data with collapsible sections.  Click the small black triangles to
-toggle the collapsed sections.
+The report view is a tabular view of the data with collapsible sections.  Click the small black triangles to toggle the collapsed sections.
 
-Click any of the lines of the report to view the associated data in the Search tab.
+Clicking any of the lines of the table report will open the Search tab with the associated data shown in the search results table.
 
-Filtering for the Report view only supports providing a minimum count and maximum count.
+Filtering for the Report view only supports providing a minimum count and maximum count and does not support namespace filtering.
 
-Use the button labeled __Toggle view for Kind / Namespace__ to toggle the view.
+Use the button labeled __Toggle view for Kind / Namespace__ to toggle the views.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_stats_reportView.png">
 </p>
 
-
 <hr style="border:1px solid #aaaaaa">
+

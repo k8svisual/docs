@@ -1,13 +1,13 @@
 
-Search provides the ability to search all K8s resources in the selected snapshot.  
+Search tab provides the ability to search all K8s resources in the selected snapshot.  
 
-The Search value input field can be used standalone or in conjunction with the Namespace(s) and/or 
-Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.
+The Search value input field can be used standalone or in conjunction with the Namespace(s) and/or Kind(s) inputs. All data provided in the 'Search value' field is case sensitive.
 
-The Namespace(s) and Kind(s) searches are performed before searching with the 'Search value' input data.
-
+The Namespace(s) and Kind(s) searches are performed __before__ searching with the 'Search value' input data.
 
 ### Search screen
+
+The following Search screen shows the selection of two Kinds, ConfigMap and Secret within the selected Namespace: kube-public.  A table with the search results is shown below the entered parameters. 
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_search.png">
@@ -19,11 +19,12 @@ The following are the options when using the 'Search value' input field.
 
 ### Full search
 
-Enter any text in the 'Search value' input field. Kubernetes resource definitions will be searched for the value regardless of where the value is located.
+Enter any text in the 'Search value' input field. All Kubernetes resource definitions will be searched for the value regardless of where the value is located.
 
 ### Limited searches
 
 There are three types of limited searches. Each requires a specific keyword to indicate the associated search is to be performed. 
+
 Keywords must be entered in lowercase followed with a colon.
 
 | Limited Search Type | Search Key |
@@ -70,4 +71,5 @@ The search results table has several controls.  There are identified in the foll
 </p>
 
 <hr style="border:1px solid #aaaaaa">
+
 

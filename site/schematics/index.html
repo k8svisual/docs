@@ -619,12 +619,12 @@
 
   <h1>-Workload Schematics</h1>
 
-<p>This is a schematic view of a deployed Pod and the associated resources.</p>
+<p>Workload Schematics tab is a view of a deployed Pod and the associated resources.</p>
 <p>From the namespace drop-down select one or more namespaces.  Once namespace(s) have been selected press the <strong>View Schematic(s)</strong> button. </p>
 <p>A button for each selected namespace will be displayed.  Press one or more buttons to view the associated schematics for the namespace.  </p>
 <p>If the button is yellow the namespace has no deployed and running pods.</p>
 <hr />
-<h3 id="workload-schematics-tab">Workload Schematics tab</h3>
+<h3 id="workload-schematics-view">Workload Schematics view</h3>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics.png">
 </p>
@@ -635,8 +635,8 @@
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_rollover.png">
 </p>
 
-<p>Click the icon to view the resource definition.  If more than one resource is defined for the icon a selection dialog is shown to allow selecting the individual resources definitions.</p>
-<p>For resource kind <em>Secret</em> there will be a screen allowing the ability to view the Secret yaml or the base64 information decoded.</p>
+<p>Click the icon to view the resource definition.  If more than one resources is defined for the icon a selection dialog is shown to allow selecting the individual resource definition.</p>
+<p>For resource kind <em>Secret</em> there will be a screen allowing the ability to view the Secret yaml or the base64 information in a decoded format.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_resources.png">
 </p>
@@ -646,14 +646,13 @@
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_decode.png">
 </p>
 
-<p>When a resoruce button is pressed the defintion of the source of the resource is shown in a view only modal screen.</p>
+<p>When a resource button is pressed the definition of the source of the resource is shown in a view only modal screen.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_source.png">
 </p>
 
 <p>The light gray bar at the top of the schematic represents namespace level resources for the workload.  The dark gray bar on the righthand side of the schematic has cluster level resources.</p>
-<p>When the 'Namespace' icon in the light gray bar is pressed a scrollable list of all resources defined in the 
-namespace is shown.  Click any of the lines of data to view the resource definition.</p>
+<p>When the 'Namespace' icon in the light gray bar is pressed a scrollable list of all resources defined in the namespace is shown.  Click any of the lines of data to view the associated resource definition.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_workloadschematics_namespace.png">
 </p>

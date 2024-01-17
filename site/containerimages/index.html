@@ -619,26 +619,28 @@
 
   <h1>-Container Images</h1>
 
-<p>Container Images provides two views, table and graph, of the container images defined within the K8s cluster by Repository.</p>
-<p>From the Select Repository drop-down select a single repository.  Once a repository has been selected press the "<strong>View selected repository</strong>" button. </p>
-<p>If there is no selected repository a warning message is displayed. The results are a table view of the container images for the selected repository.  The <strong>Toggle Views (table/graph)</strong> button can be pressed to toggle between the two views.</p>
+<p>Container Images provides a table and graph view of the container images defined within the K8s cluster by Repository name.</p>
+<p>From the Repository drop-down select a single repository.  Once a repository has been selected press the "<strong>View selected repository</strong>" button. Pressing this button populates the views.  If this button is not pressed and the Toggle views button is pressed there will be no graph or data shown.</p>
+<p>If the View selected repository button is pressed and there is no selected repository a warning message is displayed. </p>
+<p>The successful results are a graph or table view of the container images for the selected repository.  Use the <strong>Toggle Views (table/graph)</strong> button to toggle between the graph and table views.</p>
+<p>Press the blue circle button with an ‘i’ to view additional information regarding this tab.</p>
 <h3 id="table">Table</h3>
-<p>In the table view the <strong>Search</strong> input field can be used to filter what is shown in the table. The checkbox fields on the left-hand side of the table can be selected to filter to only the selected rows.  If selected press the the button <strong>Graph selected tab rows</strong> to limit what is shown in the Graph view.</p>
+<p>In the table view the checkbox fields on the left-hand side of the table can be selected to filter to only the selected rows.  If any rows are selected pressing the button <strong>Graph selected tab rows</strong> button will limit what is shown in the Graph view.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_container_images_table.png">
 </p>
 
+<hr style="border:1px solid #aaaaaa">
+
 <h3 id="graph">Graph</h3>
-<p>The graph view is a scrollable view of the selected Repository, Image, Namespace, workload, and Container / Init-Container.  Clicking
-any of the icons other than the workload icon will return a message that 'No resource data available for the selected item.'.</p>
+<p>The graph view is a scrollable view of the selected Repository, Image, Namespace, workload, and Container / Init-Container.  Click any of the icons to view the related resource information.  If no data is available the message 'No resource data available for the selected item.' Will be displayed.</p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_container_images_graph.png">
 </p>
 
 <hr />
 <h4 id="graph-icons">Graph Icons</h4>
-<p>The following are the icons that are displayed in the Graph view.  Press the <strong>Legend</strong> button to view additional information 
-regarding this tab.</p>
+<p>The following icons are displayed in the Graph view.  </p>
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_container_images_legend.png">
 </p>

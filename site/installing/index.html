@@ -622,16 +622,22 @@
 <p>Vpk is an application that can run locally on your computer as a node.js application or run inside a Docker container.  </p>
 <p>The VpK software source code is available from the following GitHub repository:  </p>
 <p><strong>https://github.com/k8svisual/vpk.git</strong>  </p>
-<p>The VpK software docker image is available from the following dockerhub.</p>
+<p>The VpK software docker image is available from the following Docker Hub.</p>
 <p><strong>https://hub.docker.com/k8svisual/u/k8svisual</strong> </p>
-<p>The prerequiste software to run locally:</p>
+<h4 id="prerequisites">Prerequisites</h4>
+<p>The prerequisite software must be available prior to running VpK.  This does require that additional software be installed that is not provided by VpK.</p>
+<h4 id="prerequisite-software-to-run-locally">Prerequisite software to run locally</h4>
 <ul>
 <li>browser - must support html 5 for the user interface </li>
 <li>node.js and npm - install node packages and run the VpK server component </li>
 <li>kubectl - Kubernetes command line tool or other CLI used to communicate with a K8s cluster </li>
 </ul>
-<p>The prerequiste software to run in a Docker conatiner:
-- Docker desktop or equivilent software.</p>
+<h4 id="prerequisite-software-to-run-docker-container">Prerequisite software to run Docker container</h4>
+<ul>
+<li>Docker desktop or equivalent software.</li>
+</ul>
+<hr style="border:1px solid #aaaaaa">
+
 <h3 id="install-and-run-vpk-locally">Install and run VpK locally</h3>
 <p>Clone the source code repository or download the zip.  If using zip file, unzip file into a directory.  Change to the directory where the software is located and install the required node.js packages using the following command: </p>
 <div class="highlight"><pre><span></span><code>npm install
@@ -642,23 +648,24 @@
 <div class="highlight"><pre><span></span><code>npm start
 </code></pre></div>
 <p>The server portion of VpK is started using the default port 4200.</p>
-<p>Access the VpK server by opening a browser with the following url:</p>
+<p>Access the VpK server by opening a browser with the following URL:</p>
 <div class="highlight"><pre><span></span><code>http://localhost:4200
 </code></pre></div>
-<p>The above url assumes the VpK server is running on the same machine where the browser is launched.  If not
-replace the 'localhost' with the server address.</p>
+<p>The above URL assumes the VpK server is running on the same machine where the browser is launched.  If not the server is not running on the same machine as the browser replace the 'localhost' with the server address.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>See the below section <strong>Optional start parameters</strong> for more information on the options when starting and running the VpK server.</p>
 </div>
-<hr />
+<hr style="border:1px solid #aaaaaa">
+
 <h3 id="install-and-run-vpk-from-a-container">Install and run VpK from a container</h3>
-<p>To install VpK using a Docker image use the following command:</p>
+<p>To install VpK using a container image use the following command.  The following command assumes the use of Docker.  If other software is used replace the docker command with the appropriate command.  </p>
+<p>The VpK container is available on Docker Hub.  If another location is desired the new image must be built and deployed to the desired repository.  The ‘Dockerfile’ that was used to create the image is available at the same location as the source code (see above).</p>
 <div class="highlight"><pre><span></span><code>docker pull k8svisual/vpk
 </code></pre></div>
 <h3 id="running-vpk-from-a-container">Running VpK from a container</h3>
 <p>The container runs the VpK server and hosts the web application at the default port 4200.</p>
-<p>Two parameters are used when statring the container.</p>
+<p>Two parameters are used when starting the container.</p>
 <table>
 <thead>
 <tr>
@@ -683,21 +690,22 @@ replace the 'localhost' with the server address.</p>
 </tr>
 </tbody>
 </table>
-<p>Example command to run VpK from a Docker container. Replace "SNAPDIR" with the directory for the local stored snapshots. </p>
+<p>Example command to run VpK from a Docker container. </p>
+<p>Replace <strong>SNAPDIR</strong> with the directory for the local stored snapshots. </p>
 <div class="highlight"><pre><span></span><code>docker run -v SNAPDIR:/vpk/cluster
 </code></pre></div>
-<p>Example command to run VpK from a Docker container with parameters for snapshot data directory and mapping local port 8000 to the default 4200 port. Replace "SNAPDIR" with the directory for the local stored snapshots. </p>
+<p>Example command to run VpK from a Docker container with parameters for snapshot data directory and mapping local port 8000 to the default 4200 port. Replace <strong>SNAPDIR</strong> with the directory for the local stored snapshots. </p>
 <div class="highlight"><pre><span></span><code>docker run -v SNAPDIR:/vpk/cluster -p 8000:4200 k8svisual/vpk
 </code></pre></div>
 <p><br></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Refer to the Snapshots section of this documentation for detailed information about creating
-the snapshot files from a Kubernetes cluster.</p>
+<p>Refer to the Snapshots section of this documentation for detailed information about creating the snapshot files from a Kubernetes cluster.</p>
 </div>
-<hr />
+<hr style="border:1px solid #aaaaaa">
+
 <h3 id="optional-start-parameters">Optional start parameters</h3>
-<p>VpK has the following start parameters.  Default values will be used is no start parameters are provided. </p>
+<p>VpK has the following start parameters.  Default values will be used if no start parameters are provided. </p>
 <div class="admonition warn">
 <p class="admonition-title">Warn</p>
 <p>These are not parameters for Docker! These parameters are used by VpK when the server is started.</p>
