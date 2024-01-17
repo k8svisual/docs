@@ -8,9 +8,16 @@ The use of a dashed bounding line is used to group the objects in the selected n
 
 Click on any of the displayed objects and the associated resource definition will be displayed.
 
+#### Security view with Namespace items
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security.png">
 </p>
+
+#### Security view with Cluster level items
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security2.png">
+</p>
+
 
 ### Security filter
 
@@ -20,15 +27,13 @@ and press the "__Filter bindings__" button to view.  Press the __Close__ button 
 The results are a graph of the security bindings.  Subjects are shown as a rectangle at the top, bindings are shown as an ellipse in the middle, and 
 roles shown as a six-sided object at the bottom of the graph.  Below the Role is a list of the defined rules associated with the Role.
 
-
-
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_filter.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_legend.png">
 </p>
 
 ### Security legend
 
-The __Legend__ button can be pressed to view example shapes and colors for the display.
+The blue circle with the 'i' and can be pressed to view example shapes and colors for the display.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_security_filter.png">
