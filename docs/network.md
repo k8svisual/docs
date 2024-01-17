@@ -48,7 +48,7 @@ __Apply filter__ and the filter will be applied and the filter screen closed.
 The drop down for the filter type will have different options based on the view.  Node view has two filter types: Node name and Node ip.  While the Services view has five filter types: Service name, Service ip, Pod name, Pod ip, and Namespace.
 
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_services.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_network_filter.png">
 </p>
 
 
