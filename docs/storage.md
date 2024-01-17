@@ -11,13 +11,14 @@ In the scrollable section of the view click on any of the resource icons to view
 </p>
 
 
-Along with viewing the above information the following three categories of information are available for each node in the
-cluster.  Click any of the table rows to drill down and click any Pod icon to view the resource detail.
-
 #### Totals by Types
 
+Along with viewing the above information the following three categories of information are available for each node in the
+cluster.  Click the associated button at the top of the screen to view the information.  Once the dta is shown click any of the table rows to drill down and click any Pod icon to view the resource detail.
+
+
 <p align="center">
-  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_storage_by_types.png">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_storage_by_type.png">
 </p>
 
 #### Totals by Node
