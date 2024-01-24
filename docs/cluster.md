@@ -65,7 +65,7 @@ The blue circle button with and 'i' provides information related to the displaye
 
 <hr style="border:1px solid #aaaaaa">
 
-### Cluster Timelapse
+### Timelapse button
 
 In the upper portion of this tab is a button labeled __Timelapse__.  When clicked this button will clear the 3D view and open the timelapse controls. This feature will display changes to the cluster in time sequence as they occur via intervals. The duration of each interval is dynamic.  The shortest duration is one second and the longest duration is based on the amount of time between the next change to occur in the cluster.
 
@@ -104,6 +104,20 @@ Once the auto display is paused the detail changes for the currently displayed t
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_detail.png">
+</p>
+
+<hr style="border:1px solid #aaaaaa">
+
+### Report button
+
+In the upper portion of this tab is a button labeled __Report__.  When clicked this button will clear the 3D view and open a view with 
+categories of cluster information for the selected snapshot.  Click a category title and the view will expand to present the associated information. Clicking the category title again will toggle the view data.
+
+Drilling down within the associated information is supported when approriate.
+
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_report.png">
 </p>
 
 <hr style="border:1px solid #aaaaaa">

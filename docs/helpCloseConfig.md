@@ -21,6 +21,12 @@ All help topics provide three buttons in the upper right of the screen to aid in
 
 This built-in help system is a modified version of the web based VpK documentation.
 
+The following is the Table of Contents page for the help system.
+
+<p align="center">
+  <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/help_toc.png">
+</p>
+
 <hr style="border:1px solid #aaaaaa">
 
 ### Shutdown
@@ -105,6 +111,8 @@ If the 'Save configuration' button is pressed the following will be shown once t
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/config_confirm.png">
 </p>
 
+<hr style="border:1px solid #aaaaaa">
+
 #### Resource viewing themes
 
 Two themes are available for viewing the k8s resource source and status information.  These are the light and dark.  Examples
@@ -112,19 +120,26 @@ for each follow:
 
 #### Light theme
 
+A white background is shown with this theme. Text is shown in purple, blue, and black.
+
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/resource_light.png">
 </p>
 
 #### Dark theme
 
+A black background is shown with this theme. Text is shown in orange, green, and grey.
+
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/resource_dark.png">
 </p>
 
+<hr style="border:1px solid #aaaaaa">
+
 #### VpK component usage information
 
-Press the blue circle with an "i" located in the bottom portion of screen to view the VpK usage information.
+Press the blue circle with an "i" located in the bottom portion of screen to view the VpK usage information.  This includes
+memory, cpu, network, operating system, browser agent, and machine information.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/about.png">
