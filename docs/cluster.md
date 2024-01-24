@@ -98,9 +98,9 @@ The filter slide-out provides the ability to control showing of the Network or S
 </p>
 
 
-#### Interval detail
+#### Interval detail view
 
-Once the auto display is paused the detail changes for the currently displayed time interval can be viewed by pressing the blue circle with an 'i'.  Pressing this blue circle will display all changes in the current interval in a tabular form.
+Once the auto display is paused the detail changes for the currently displayed time interval can be viewed by pressing the blue eye icon. Pressing this will display all changes in the current interval in a tabular form.
 
 <p align="center">
   <img style="float: center;" src="https://raw.githubusercontent.com/k8svisual/vpk-docs/master/docs/images/tab_cluster_timelapse_detail.png">
